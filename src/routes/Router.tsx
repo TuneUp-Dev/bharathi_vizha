@@ -1,23 +1,22 @@
 import { Route, Routes } from 'react-router-dom'
-import About from '../pages/about';
-import Contact from '../pages/contact';
-import First from '../pages/first';
-import Home from '../pages/home';
-import Second from '../pages/second';
-import Third from '../pages/third';
+import About from '../pages/About';
+import Contact from '../pages/Contact';
+import First from '../pages/First';
+import Home from '../pages/Home';
+import Second from '../pages/Second';
+import Third from '../pages/Third';
 
 const Router = () => {
   return (
-    <>
         <Routes>
             <Route path="/" element={<Home/>} />
-            <Route path="/about" element={<About/>} />
-            <Route path="/first" element={<First/>} />
-            <Route path="/second" element={<Second/>} />
-            <Route path="/third" element={<Third />}/>
-            <Route path="/contact" element={<Contact/>} />
+            <Route path="/About" element={<About/>} />
+            <Route path="/First" element={<First/>} />
+            <Route path="/Second" element={<Second/>} />
+            <Route path="/Third" element={<Third />}/>
+            <Route path="/Contact" element={<Contact/>} />
         </Routes>
-    </>
+
   )
 }
 
