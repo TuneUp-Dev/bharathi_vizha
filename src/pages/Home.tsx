@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 const Home = () => {
   return (
     <>
-      <div className="overflow-y-scroll h-screen pt-20 scroll-smooth transition-all duration-300 ease-linear snap-y snap-mandatory scrollbar scrollbar-thumb-red-900 scrollbar-track-gray-100">
+      <div className="overflow-y-scroll h-screen scroll-smooth transition-all duration-300 ease-linear md:snap-y md:snap-mandatory scrollbar scrollbar-thumb-red-900 scrollbar-track-gray-100">
         <Navbar />
         <Header snapAlign="start" />
         <About snapAlign="start" />

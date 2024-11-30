@@ -14,7 +14,7 @@ const Agenda = ({ snapAlign = "start" }) => {
       style={{ scrollSnapAlign: snapAlign }}
       className="h-[1100px] sm:h-[1500px] md:h-[1500px] xl:h-[1800px] mt-20 flex flex-col items-center bg-red-900 justify-start px-8"
     >
-      <h1 className="text-[50px] text-amber-500 font-bold mb-10 mt-32">
+      <h1 className="text-[40px] xl:text-[50px] text-amber-500 font-bold mb-10 mt-32">
         பாரதி விழா 2024 தொகுப்பு
       </h1>
       <div className="space-y-0">
@@ -46,7 +46,7 @@ const Agenda = ({ snapAlign = "start" }) => {
                     rotate: "120deg",
                     filter: "hue-rotate(200deg) brightness(0.8)",
                   }}
-                  className="lg:block hidden sm:w-[150px] md:scale-[0.7] lg:w-[250px] xl:w-[300px]"
+                  className="hidden md:block"
                 />
               ) : null}
               {/* Image Container */}
@@ -74,7 +74,7 @@ const Agenda = ({ snapAlign = "start" }) => {
                     transform: "scaleX(-1)",
                     filter: "hue-rotate(200deg) brightness(0.8)",
                   }}
-                  className="lg:block hidden sm:w-[150px] md:scale-[0.7] lg:w-[250px] xl:w-[300px]"
+                  className="hidden md:block"
                 />
               ) : null}
             </div>

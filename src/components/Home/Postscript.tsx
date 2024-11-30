@@ -4,7 +4,7 @@ const Postscript = ({ snapAlign = "start" }) => {
   return (
     <div
       style={{ scrollSnapAlign: snapAlign }}
-      className="w-full max-w-[1200px] mx-auto h-auto pt-10 px-5 sm:px-10 lg:pt-36 flex justify-center items-end"
+      className="w-full max-w-[1200px] mx-auto h-auto pt-20 md:pt-10 px-5 sm:px-10 lg:pt-36 flex justify-center items-end"
     >
       <div className="w-full bg-gray-100 rounded-xl text-center px-5 sm:px-10 lg:px-16 py-8">
         {/* Title */}
