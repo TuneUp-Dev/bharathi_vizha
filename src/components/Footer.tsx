@@ -38,7 +38,7 @@ const Footer = ({ snapAlign = "start" }) => {
                 <InstagramIcon />
               </Link>
               <Link to="#" target="_blank">
-                <img src={FacebookIcon} className="w-6" alt="" />
+                <img src={FacebookIcon} className="w-5" alt="" />
               </Link>
             </div>
           </div>

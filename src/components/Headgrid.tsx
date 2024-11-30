@@ -1,6 +1,4 @@
-import React from "react";
-
-const Headgrid = () => {
+const HeadGrid = () => {
   return (
     <div className="h-screen bg-red-950 p-10 md:p-20 lg:p-[100px] flex flex-col items-center justify-center text-center">
       <h1 className="text-[30px] md:text-[40px] lg:text-[50px] text-amber-500 font-bold">
@@ -19,4 +17,4 @@ const Headgrid = () => {
   );
 };
 
-export default Headgrid;
+export default HeadGrid;

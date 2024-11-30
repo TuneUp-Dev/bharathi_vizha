@@ -27,9 +27,9 @@ const Navbar = () => {
           {[
             { path: "/", label: "Home" },
             { path: "/about", label: "About us" },
-            { path: "/timeline/1998-2007", label: "1998 - 2007" },
-            { path: "/timeline/2008-2017", label: "2008 - 2017" },
-            { path: "/timeline/2018-2024", label: "2018 - 2023" },
+            { path: "/1998-2006", label: "1998 - 2006" },
+            { path: "/2007-2015", label: "2007 - 2015" },
+            { path: "/2016-2023", label: "2016 - 2023" },
           ].map((link) => (
             <li
               key={link.path}
