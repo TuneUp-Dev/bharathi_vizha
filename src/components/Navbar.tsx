@@ -13,13 +13,13 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`w-full h-[100px] bg-amber-500 rounded-b-[60px] px-10 md:px-20 flex justify-between items-center fixed top-0 left-0 z-50 ${
+        className={`w-full h-[60px] md:h-[100px] bg-amber-500 rounded-b-[20px] md:rounded-b-[60px] px-10 md:px-20 flex justify-between items-center fixed top-0 left-0 z-50 ${
           isMenuOpen ? "shadow-none" : "shadow-sm"
         }`}
       >
         {/* Logo */}
         <div>
-          <img src={Logo} className="w-[60px]" alt="Logo" />
+          <img src={Logo} className="w-[40px] md:w-[60px]" alt="Logo" />
         </div>
 
         {/* Desktop Links */}
@@ -51,7 +51,7 @@ const Navbar = () => {
 
         {/* Hamburger Menu Icon */}
         <div
-          className="lg:hidden text-red-800 text-3xl cursor-pointer"
+          className="lg:hidden text-red-800 text-2xl md:text-3xl cursor-pointer"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <FaTimes /> : <FaBars />}
@@ -60,8 +60,8 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed pt-[125px] top-0 z-40 left-0 min-h-[320px] sm:min-h-[250px] w-full px-20 bg-amber-500 rounded-b-[60px] shadow-md grid grid-cols-2 sm:grid-cols-3 items-center gap-y-5 py-20 transition-all duration-300 ease-in-out ${
-          isMenuOpen ? "opacity-100 h-0" : "opacity-0"
+        className={`fixed pt-[90px] md:pt-[125px] top-0 z-40 left-0 min-h-[250px] sm:min-h-[250px] w-full px-20 bg-amber-500 rounded-b-[30px] md:rounded-b-[60px] shadow-md grid grid-cols-2 sm:grid-cols-3 items-center gap-y-3 md:gap-y-5 py-8 md:py-20 transition-all duration-700 ease-in-out ${
+          isMenuOpen ? "top-0" : "-top-48"
         } lg:hidden`}
       >
         {[

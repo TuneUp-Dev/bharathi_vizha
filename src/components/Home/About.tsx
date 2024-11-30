@@ -4,7 +4,7 @@ const About = ({ snapAlign = "start" }) => {
   return (
     <div
       style={{ scrollSnapAlign: snapAlign }}
-      className="w-full max-w-[1200px] mx-auto h-auto pt-10 px-5 sm:px-10 lg:pt-36 flex flex-col-reverse lg:flex-row justify-between items-center gap-y-10 lg:gap-y-0 lg:gap-x-20"
+      className="w-full max-w-[1200px] mx-auto h-auto pt-20 md:pt-10 px-5 sm:px-10 lg:pt-36 flex flex-col-reverse lg:flex-row justify-between items-center gap-y-10 lg:gap-y-0 lg:gap-x-20"
     >
       {/* About Text */}
       <div className="text-black">
