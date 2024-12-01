@@ -22,7 +22,7 @@ const Header = ({ snapAlign = "start" }) => {
             className="min-w-[500px] sm:w-[650px] md:w-[800px] lg:w-[1000px] xl:w-[1200px] h-auto mx-auto bottom-[-30px] xl:mt-24 z-10 relative object-cover select-none"
             alt="Background"
           />
-          <div className="absolute bottom-0 z-30 w-full h-[100px] bg-gradient-to-t from-red-950 to-transparent"></div>
+          <div className="absolute bottom-0 z-30 w-full h-[60px] md:h-[100px] bg-gradient-to-t from-red-950 to-transparent"></div>
         </div>
 
         {/* Left Text */}
