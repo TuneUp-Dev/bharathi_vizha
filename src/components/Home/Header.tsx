@@ -26,7 +26,7 @@ const Header = ({ snapAlign = "start" }) => {
         </div>
 
         <div
-          className={`absolute top-[110px] text-center w-full flex justify-center items-center transform text-amber-500 font-bold transition-all duration-1000 ease-in-out ${
+          className={`absolute md:hidden top-[110px] text-center w-full flex justify-center items-center transform text-amber-500 font-bold transition-all duration-1000 ease-in-out ${
             isVisible ? "opacity-100" : "opacity-0"
           } text-[50px] sm:text-[60px]`}
         >
