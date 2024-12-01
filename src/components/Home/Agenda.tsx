@@ -12,9 +12,9 @@ const Agenda = ({ snapAlign = "start" }) => {
   return (
     <div
       style={{ scrollSnapAlign: snapAlign }}
-      className="h-[1100px] sm:h-[1500px] md:h-[1500px] xl:h-[1800px] mt-20 flex flex-col items-center bg-red-900 justify-start px-8"
+      className="h-[860px] sm:h-[1500px] md:h-[1500px] xl:h-[1800px] text-center md:text-start mt-20 flex flex-col items-center bg-red-900 justify-start px-8"
     >
-      <h1 className="text-[40px] xl:text-[50px] text-amber-500 font-bold mb-10 mt-32">
+      <h1 className="text-[21px] md:text-[40px] xl:text-[50px] text-amber-500 font-bold mb-10 mt-12 md:mt-32">
         பாரதி விழா 2024 தொகுப்பு
       </h1>
       <div className="space-y-0">
@@ -25,7 +25,7 @@ const Agenda = ({ snapAlign = "start" }) => {
           return (
             <div
               key={index}
-              className={`min-w-[360px] h-[270px] xl:h-auto lg:h-[440px] sm:min-w-[560px] sm:h-[400px] md:h-[400px] lg:min-w-[960px] xl:min-w-[1200px] mt-[-120px] pt-[140px] flex items-center ${
+              className={`min-w-[320px] h-[240px] xl:h-auto lg:h-[440px] sm:min-w-[560px] sm:h-[400px] md:h-[400px] lg:min-w-[960px] xl:min-w-[1200px] mt-[-90px] md:mt-[-120px] pt-[140px] flex items-center ${
                 index % 2 === 0 ? "justify-start" : "justify-end"
               }`}
               style={{
@@ -51,7 +51,7 @@ const Agenda = ({ snapAlign = "start" }) => {
               ) : null}
               {/* Image Container */}
               <div
-                className={`min-w-[360px] sm:w-[560px] md:w-[600px] lg:w-[500px] md:h-[360px] lg:h-[300px] xl:w-[600px] xl:h-[400px] rounded-lg shadow-lg overflow-hidden ${
+                className={`min-w-[320px] sm:w-[560px] md:w-[600px] lg:w-[500px] md:h-[360px] lg:h-[300px] xl:w-[600px] xl:h-[400px] rounded-lg shadow-lg overflow-hidden ${
                   index % 2 === 0 ? "left-0" : "right-0"
                 }`}
               >
