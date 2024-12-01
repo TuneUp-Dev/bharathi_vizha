@@ -13,7 +13,7 @@ const Postscript = ({ snapAlign = "start" }) => {
         </h1>
 
         {/* Content */}
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-y-10 lg:gap-y-0 gap-x-10">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-y-10 lg:gap-y-0 gap-x-10">
           {/* Text Section */}
           <div className="flex-1 text-start">
             <h1 className="text-[28px] sm:text-[36px] lg:text-[50px] text-red-900 font-bold mb-5">

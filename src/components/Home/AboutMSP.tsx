@@ -1,4 +1,4 @@
-import Logo from "../../assets/msp.png";
+import Logo from "../../assets/msp_logo.png";
 
 const AboutMSP = ({ snapAlign = "start" }) => {
   return (
@@ -6,7 +6,7 @@ const AboutMSP = ({ snapAlign = "start" }) => {
       style={{ scrollSnapAlign: snapAlign }}
       className="w-full max-w-[1200px] mx-auto h-auto pt-20 md:pt-10 px-5 sm:px-10 lg:pt-36 flex justify-center items-center"
     >
-      <div className="w-full bg-gray-100 rounded-xl flex flex-col-reverse lg:flex-row justify-between items-center gap-y-10 lg:gap-y-0 px-5 sm:px-10 lg:px-16 py-8">
+      <div className="w-full rounded-xl flex flex-col-reverse lg:flex-row justify-between items-center gap-y-10 lg:gap-x-10 lg:gap-y-0 px-5 sm:px-10 lg:px-16 py-8">
         {/* Text Content */}
         <div className="w-full h-auto">
           <h1 className="text-[32px] sm:text-[40px] lg:text-[50px] text-red-900 font-bold mb-5 text-center lg:text-left">
