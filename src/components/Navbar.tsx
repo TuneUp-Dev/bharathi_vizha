@@ -63,7 +63,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         className={`fixed pt-[90px] md:pt-[125px] top-0 z-40 left-0 min-h-[250px] sm:min-h-[250px] w-full px-20 bg-amber-500 rounded-b-[20px] md:rounded-b-[60px] shadow-md grid grid-cols-2 sm:grid-cols-3 items-center gap-y-3 md:gap-y-5 py-8 md:py-20 transition-all duration-700 ease-in-out ${
-          isMenuOpen ? "top-0" : "-top-[200px]"
+          isMenuOpen ? "top-0" : "-top-[210px]"
         } lg:hidden`}
       >
         {[
