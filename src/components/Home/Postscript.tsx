@@ -8,12 +8,12 @@ const Postscript = ({ snapAlign = "start" }) => {
     >
       <div className="w-full bg-gray-100 rounded-xl text-center px-5 sm:px-10 lg:px-16 py-8">
         {/* Title */}
-        <h1 className="text-[24px] sm:text-[28px] lg:text-[32px] text-black underline underline-offset-4 font-semibold mb-8">
+        <h1 className="text-[18px] sm:text-[22px] lg:text-[25px] text-black underline underline-offset-4 font-semibold mb-8">
           பின்குறிப்பு
         </h1>
 
         {/* Content */}
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-y-10 lg:gap-y-0 gap-x-10">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-y-10 lg:gap-y-0 gap-x-10">
           {/* Text Section */}
           <div className="flex-1 text-start">
             <h1 className="text-[28px] sm:text-[36px] lg:text-[50px] text-red-900 font-bold mb-5">

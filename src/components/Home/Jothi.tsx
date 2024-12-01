@@ -1,16 +1,14 @@
-import JothiImg from "../../assets/background.webp";
-
 const Jothi = ({ snapAlign = "start" }) => {
   return (
     <div
       style={{ scrollSnapAlign: snapAlign }}
       className="w-full max-w-[1200px] mx-auto h-auto pt-20 md:pt-10 px-5 sm:px-10 lg:pt-36 flex justify-center items-center"
     >
-      <div className="w-full bg-gray-100 rounded-xl flex flex-col lg:flex-row justify-between items-center gap-y-10 lg:gap-y-0 px-5 sm:px-10 lg:px-16 py-8">
+      <div className="w-full bg-gray-100 rounded-xl flex flex-col lg:flex-row justify-between items-center gap-y-10 lg:gap-x-10 lg:gap-y-0 px-5 sm:px-10 lg:px-16 py-8">
         {/* Image */}
         <img
-          src={JothiImg}
-          className="w-full max-w-[300px] sm:max-w-[400px] rounded-xl object-cover"
+          src={"https://i.ibb.co/PzHWPjN/gettyimages-117246139-612x612.jpg"}
+          className="w-full max-w-[300px] sm:max-w-[250px] rounded-xl object-cover"
           alt="Jothi"
         />
 

@@ -4,9 +4,9 @@ import { Player } from "@lottiefiles/react-lottie-player";
 const Agenda = ({ snapAlign = "start" }) => {
   // List of image URLs
   const images = [
-    "https://via.placeholder.com/300x200?text=Image+2",
-    "https://via.placeholder.com/300x200?text=Image+2",
-    "https://via.placeholder.com/300x200?text=Image+3",
+    "https://i.ibb.co/dLdNXDW/1998.jpg",
+    "https://i.ibb.co/dLdNXDW/1998.jpg",
+    "https://i.ibb.co/dLdNXDW/1998.jpg",
   ];
 
   return (
@@ -43,10 +43,11 @@ const Agenda = ({ snapAlign = "start" }) => {
                   style={{
                     width: "300px",
                     marginTop: "15rem",
+                    marginBottom: "-10rem",
                     rotate: "120deg",
                     filter: "hue-rotate(200deg) brightness(0.8)",
                   }}
-                  className="hidden md:block"
+                  className="hidden lg:block"
                 />
               ) : null}
               {/* Image Container */}
@@ -70,11 +71,12 @@ const Agenda = ({ snapAlign = "start" }) => {
                   style={{
                     width: "300px",
                     marginTop: "15rem",
+                    marginBottom: "-10rem",
                     rotate: "-120deg",
                     transform: "scaleX(-1)",
                     filter: "hue-rotate(200deg) brightness(0.8)",
                   }}
-                  className="hidden md:block"
+                  className="hidden lg:block"
                 />
               ) : null}
             </div>

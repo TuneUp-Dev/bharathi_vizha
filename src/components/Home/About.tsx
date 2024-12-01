@@ -1,5 +1,3 @@
-import Bharathi from "../../assets/bharathi.png";
-
 const About = ({ snapAlign = "start" }) => {
   return (
     <div
@@ -9,7 +7,7 @@ const About = ({ snapAlign = "start" }) => {
       {/* About Text */}
       <div className="text-black">
         <h1 className="text-[32px] sm:text-[40px] lg:text-[50px] text-red-900 font-bold mb-5 text-center lg:text-left">
-          சுப்ரமணிய பாரதியார் (பாரதி)
+          பாரதி விழா பற்றி
         </h1>
         <p className="text-[16px] sm:text-[18px] leading-relaxed text-justify lg:text-left">
           இந்தியாவின் தலைசிறந்த கவிஞர்களில் ஒருவராகும். அவர் 1882 ஆம் ஆண்டு
@@ -21,23 +19,13 @@ const About = ({ snapAlign = "start" }) => {
           போன்ற அற்புதமான படைப்புகளை உருவாக்கினார். பாரதியின் கவிதைகள் பொதுவாக
           தேசபக்தியும், சமூக மாற்றங்களுக்கும் வலியுறுத்தியது.
         </p>
-        <p className="mt-4 text-[16px] sm:text-[18px] leading-relaxed text-justify lg:text-left">
-          தொடர்ந்த போராட்டங்கள் மற்றும் ஆங்கிலேயர்களின் தடுக்காத
-          தாக்குதல்களினால் பாரதி கடுமையான வாழ்க்கை சவால்களை சந்திக்க நேர்ந்தது.
-          அதுவும் அவரது தைரியம் மற்றும் சிந்தனைகளின் தீவிரம் குறையவில்லை. 1921
-          ஆம் ஆண்டு செப்டம்பர் 11 அன்று, வெறும் 39 வயதிலேயே அவர் மரணமடைந்தார்.
-          பாரதியார் தனது கவிதைகளாலும், ஆழமான எண்ணங்களாலும், தமிழர் மனதில்
-          நிலைத்த இடத்தைப் பெற்றவர். அவரது கனவுகளில் ஒரு சிறந்த இந்தியா,
-          சமத்துவம் நிறைந்த சமூகமும் இருந்தது. அவரின் எண்ணங்கள் இன்று கூட
-          பலருக்கு முன்னோடியாக விளங்குகின்றன.
-        </p>
       </div>
 
       {/* Bharathiyar Image */}
       <img
-        src={Bharathi}
-        className="rounded-2xl w-full max-w-[300px] sm:max-w-[400px] object-cover"
-        alt="Subramania Bharathiyar"
+        src={"https://i.ibb.co/dLdNXDW/1998.jpg"}
+        className="rounded-2xl w-full max-w-[360px] sm:max-w-[400px] object-cover"
+        alt=""
       />
     </div>
   );
