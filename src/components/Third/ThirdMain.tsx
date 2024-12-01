@@ -17,7 +17,7 @@ const Card: React.FC<CardProps> = ({ image, title, description }) => {
         <img src={image} alt={title} className="w-full h-full object-cover" />
       </div>
       {/* Text */}
-      <div className="absolute bottom-0 w-full py-1 px-6 bg-red-800 bg-opacity-80 backdrop-blur-[4px] transition-all duration-1000 ease-linear group-hover:opacity-0">
+      <div className="absolute bottom-0 w-full py-1 px-6 bg-red-800 bg-opacity-80 backdrop-blur-[4px] transition-all duration-1000 ease-linear lg:group-hover:opacity-0">
         <h3 className="text-[22px] sm:text-[22px] md:text-[20px] lg:text-[23px] xl:text-[30px] text-center font-semibold text-amber-500">
           {title}
         </h3>
@@ -73,7 +73,7 @@ const ThirdMain: React.FC = () => {
   return (
     <>
       <div>
-        <div className="h-[120px] md:h-[140px] flex items-center justify-center mt-[20px]">
+        <div className="h-[120px] md:h-[140px] flex items-center justify-center -mt-7 md:mt-0">
           <h1 className="text-[30px] md:text-[40px] lg:text-[50px] xl:text-[60px] text-red-900 font-bold text-center">
             2016 - 2023
           </h1>
