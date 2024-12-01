@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@nextui-org/react";
 import { Link, useLocation } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa"; // For Hamburger and Close Icons
+import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../assets/msp_logo.png";
 
 const Navbar = () => {
@@ -13,13 +13,15 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`w-full h-[60px] md:h-[100px] bg-amber-500 rounded-b-[20px] md:rounded-b-[60px] px-10 md:px-20 flex justify-between items-center fixed top-0 left-0 z-50 ${
+        className={`w-full h-[60px] md:h-[80px] bg-amber-500 rounded-b-[14px] md:rounded-b-[20px] px-10 md:px-20 flex justify-between items-center fixed top-0 left-0 z-50 ${
           isMenuOpen ? "shadow-none" : "shadow-sm"
         }`}
       >
         {/* Logo */}
         <div>
-          <img src={Logo} className="w-[40px] md:w-[60px]" alt="Logo" />
+          <Link to={"/"}>
+            <img src={Logo} className="w-[40px] md:w-[60px]" alt="Logo" />
+          </Link>
         </div>
 
         {/* Desktop Links */}
@@ -60,16 +62,16 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed pt-[90px] md:pt-[125px] top-0 z-40 left-0 min-h-[250px] sm:min-h-[250px] w-full px-20 bg-amber-500 rounded-b-[30px] md:rounded-b-[60px] shadow-md grid grid-cols-2 sm:grid-cols-3 items-center gap-y-3 md:gap-y-5 py-8 md:py-20 transition-all duration-700 ease-in-out ${
-          isMenuOpen ? "top-0" : "-top-48"
+        className={`fixed pt-[90px] md:pt-[125px] top-0 z-40 left-0 min-h-[250px] sm:min-h-[250px] w-full px-20 bg-amber-500 rounded-b-[20px] md:rounded-b-[60px] shadow-md grid grid-cols-2 sm:grid-cols-3 items-center gap-y-3 md:gap-y-5 py-8 md:py-20 transition-all duration-700 ease-in-out ${
+          isMenuOpen ? "top-0" : "-top-52"
         } lg:hidden`}
       >
         {[
           { path: "/", label: "Home" },
           { path: "/about", label: "About us" },
-          { path: "/timeline/1998-2007", label: "1998 - 2007" },
-          { path: "/timeline/2008-2017", label: "2008 - 2017" },
-          { path: "/timeline/2018-2024", label: "2018 - 2023" },
+          { path: "/1998-2006", label: "1998 - 2006" },
+          { path: "/2007-2015", label: "2007 - 2015" },
+          { path: "/2016-2023", label: "2016 - 2023" },
         ].map((link) => (
           <Link
             key={link.path}
