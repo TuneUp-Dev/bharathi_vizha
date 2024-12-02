@@ -1,6 +1,3 @@
-import { Button } from "@nextui-org/react";
-import { Link } from "react-router-dom";
-
 // Define props interface
 interface CardProps {
   image: string;
