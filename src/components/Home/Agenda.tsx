@@ -3,24 +3,30 @@ import { Player } from "@lottiefiles/react-lottie-player";
 
 const Agenda = ({ snapAlign = "start" }) => {
   // List of image URLs
-  const images = [
-    "https://i.ibb.co/dLdNXDW/1998.jpg",
-    "https://i.ibb.co/dLdNXDW/1998.jpg",
-    "https://i.ibb.co/dLdNXDW/1998.jpg",
+  const contents = [
+    "1) முனைவர் சொ. சேதுபதி அவர்களுக்கு 'பாரதி விருது' வழங்கும் நிகழ்வு",
+    "2) தவத்திரு குன்றக்குடி அடிகளார் அவர்களின் திருவுருவப் படத்திறப்பு",
+    "3) தலைமை : திரு எஸ்கேஎம். மயிலானந்தன் அவர்கள்",
+    "4) தலைவர். தேசிய நல விழிப்புணர்வு இயக்கம், ஈரோடு",
+    "5) வரவேற்புரை: திரு ந. அன்பரசு அவர்கள், செயலாளர், மக்கள் சிந்தனைப் பேரவை",
+    "6) விழா அறிமுகவுரை: திரு த. ஸ்டாலின் குணசேகரன் அவர்கள், தலைவர், மக்கள் சிந்தனைப் பேரவை",
+    "7) 'பாரதி ஜோதி'யை ஏற்றி அணிவகுப்பைத் துவக்கி வைத்தல்: டாக்டர் என்.எஸ். சத்தியசுந்தரி அவர்கள்",
+    "8) தலைவர், பவானி நதி பாதுகாப்புக் கூட்டமைப்பு, கோபி",
+    "9) தவத்திரு குன்றக்குடி அடிகளார் அவர்களின் திருவுருவப் படத்தைத் திறந்து வைத்து உரை: திரு பொன்னீலன் அவர்கள், சாகித்திய அகாதெமி விருது பெற்ற எழுத்தாளர்",
   ];
 
   return (
     <div
       style={{ scrollSnapAlign: snapAlign }}
-      className="h-[860px] sm:h-[1500px] md:h-[1500px] xl:h-[1800px] text-center md:text-start mt-20 flex flex-col items-center bg-red-900 justify-start px-8"
+      className="h-auto text-center md:text-start mt-20 pb-20 flex flex-col items-center bg-red-900 justify-start px-8"
     >
       <h1 className="text-[21px] md:text-[40px] xl:text-[50px] text-amber-500 font-bold mb-10 mt-12 md:mt-32">
         பாரதி விழா 2024 தொகுப்பு
       </h1>
       <div className="space-y-0">
-        {images.map((image, index) => {
+        {contents.map((contents, index) => {
           // Only add animations for all but the last image container
-          const isAnimationVisible = index < images.length - 1;
+          const isAnimationVisible = index < contents.length - 1;
 
           return (
             <div
@@ -52,15 +58,11 @@ const Agenda = ({ snapAlign = "start" }) => {
               ) : null}
               {/* Image Container */}
               <div
-                className={`min-w-[320px] sm:w-[560px] md:w-[600px] lg:w-[500px] md:h-[360px] lg:h-[300px] xl:w-[600px] xl:h-[400px] rounded-lg shadow-lg overflow-hidden ${
+                className={`min-w-[320px] sm:w-[560px] flex justify-center items-center text-center bg-gray-200 p-8 md:w-[600px] lg:w-[500px] md:h-[360px] lg:h-[300px] xl:w-[600px] rounded-lg shadow-lg overflow-hidden ${
                   index % 2 === 0 ? "left-0" : "right-0"
                 }`}
               >
-                <img
-                  src={image}
-                  alt={`Image_${index + 1}`}
-                  className="w-full h-full object-cover"
-                />
+                <h1 className="text-[25px]">{contents}</h1>
               </div>
               {/* Lottie Animation */}
               {isAnimationVisible && index % 2 === 0 ? (
