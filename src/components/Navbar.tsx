@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`w-full h-[60px] md:h-[80px] bg-amber-500 rounded-b-[14px] md:rounded-b-[20px] px-10 md:px-20 flex justify-between items-center fixed top-0 left-0 z-50 ${
+        className={`w-full h-[60px] md:h-[80px] bg-amber-500 rounded-b-[14px] md:rounded-b-[20px] px-10 md:px-20 lg:px-24 xl:px-28 flex justify-between items-center fixed top-0 left-0 z-50 ${
           isMenuOpen ? "shadow-none" : "shadow-sm"
         }`}
       >
@@ -46,9 +46,11 @@ const Navbar = () => {
 
         {/* Contact Us Button (Visible in all screen sizes) */}
         <div className="hidden lg:block">
-          <Button className="bg-red-800 text-white" size="lg">
-            Contact us
-          </Button>
+          <Link to={"/contact"}>
+            <Button className="bg-red-800 text-white" size="lg">
+              Contact us
+            </Button>
+          </Link>
         </div>
 
         {/* Hamburger Menu Icon */}
@@ -86,9 +88,11 @@ const Navbar = () => {
             {link.label}
           </Link>
         ))}
-        <Button className="bg-red-950 text-white" size="lg">
-          Contact us
-        </Button>
+        <Link to={"/contact"}>
+          <Button className="bg-red-950 text-white" size="lg">
+            Contact us
+          </Button>
+        </Link>
       </div>
     </>
   );

@@ -7,7 +7,7 @@ const About = ({ snapAlign = "start" }) => {
       {/* About Text */}
       <div className="text-black">
         <h1 className="text-[32px] sm:text-[40px] lg:text-[50px] text-red-900 font-bold mb-5 text-center lg:text-left">
-          பாரதி விழா பற்றி
+          முன்னுரை
         </h1>
         <p className="text-[16px] sm:text-[18px] leading-relaxed text-justify lg:text-left">
           இந்தியாவின் தலைசிறந்த கவிஞர்களில் ஒருவராகும். அவர் 1882 ஆம் ஆண்டு
