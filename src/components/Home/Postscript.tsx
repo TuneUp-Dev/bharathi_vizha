@@ -32,7 +32,7 @@ const Postscript = ({ snapAlign = "start" }) => {
           {/* Image Section */}
           <img
             src={Newspaper}
-            className="w-full max-w-[150px] sm:max-w-[200px] lg:max-w-[250px] rounded-xl object-cover"
+            className="w-full mx-auto max-w-[150px] sm:max-w-[200px] lg:max-w-[250px] rounded-xl object-cover"
             alt="Newspaper"
           />
         </div>

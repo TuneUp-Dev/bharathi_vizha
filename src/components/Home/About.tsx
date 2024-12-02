@@ -24,7 +24,7 @@ const About = ({ snapAlign = "start" }) => {
       {/* Bharathiyar Image */}
       <img
         src={"https://i.ibb.co/dLdNXDW/1998.jpg"}
-        className="rounded-2xl w-full max-w-[360px] sm:max-w-[400px] object-cover"
+        className="rounded-2xl w-full mx-auto max-w-[360px] sm:max-w-[400px] object-cover"
         alt=""
       />
     </div>
