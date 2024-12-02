@@ -18,20 +18,21 @@ const Agenda = ({ snapAlign = "start" }) => {
   return (
     <div
       style={{ scrollSnapAlign: snapAlign }}
-      className="h-auto text-center md:text-start mt-20 pb-20 flex flex-col items-center bg-red-900 justify-start px-8"
+      className="h-[2460px] md:h-auto text-center md:text-start mt-20 pb-20 flex flex-col items-center bg-red-900 justify-start px-8"
     >
       <h1 className="text-[21px] md:text-[40px] xl:text-[50px] text-amber-500 font-bold mb-10 mt-12 md:mt-32">
         பாரதி விழா 2024 தொகுப்பு
       </h1>
       <div className="space-y-0">
-        {contents.map((contents, index) => {
+        {contents.map((content, index) => {
           // Only add animations for all but the last image container
           const isAnimationVisible = index < contents.length - 1;
+          // Debugging log
 
           return (
             <div
               key={index}
-              className={`min-w-[320px] h-[240px] xl:h-auto lg:h-[440px] sm:min-w-[560px] sm:h-[400px] md:h-[400px] lg:min-w-[960px] xl:min-w-[1200px] mt-[-90px] md:mt-[-120px] pt-[140px] flex items-center ${
+              className={`min-w-[320px] h-[240px] xl:h-auto lg:h-[440px] sm:min-w-[560px] sm:h-[400px] md:h-[400px] lg:min-w-[960px] xl:min-w-[1200px] md:mt-[-120px] md:pt-[140px] flex items-start md:items-center ${
                 index % 2 === 0 ? "justify-start" : "justify-end"
               }`}
               style={{
@@ -39,7 +40,6 @@ const Agenda = ({ snapAlign = "start" }) => {
                   window.innerWidth >= 1024 ? snapAlign : "initial",
               }}
             >
-              {" "}
               {/* Lottie Animation on the right for inverse rows */}
               {isAnimationVisible && index % 2 !== 0 ? (
                 <Player
@@ -62,7 +62,7 @@ const Agenda = ({ snapAlign = "start" }) => {
                   index % 2 === 0 ? "left-0" : "right-0"
                 }`}
               >
-                <h1 className="text-[25px]">{contents}</h1>
+                <h1 className="text-[25px] font-medium">{contents}</h1>
               </div>
               {/* Lottie Animation */}
               {isAnimationVisible && index % 2 === 0 ? (

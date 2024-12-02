@@ -25,7 +25,7 @@ const AboutMSP = ({ snapAlign = "start" }) => {
         {/* Image */}
         <img
           src={Logo}
-          className="w-full max-w-[300px] sm:max-w-[400px] rounded-xl object-cover"
+          className="w-full max-w-[300px] sm:max-w-[400px] rounded-xl object-cover shadow-md md:shadow-none"
           alt="MSP Logo"
         />
       </div>

@@ -8,7 +8,7 @@ const Jothi = ({ snapAlign = "start" }) => {
         {/* Image */}
         <img
           src={"https://i.ibb.co/PzHWPjN/gettyimages-117246139-612x612.jpg"}
-          className="w-full max-w-[300px] sm:max-w-[250px] rounded-xl object-cover"
+          className="w-full max-w-[300px] mx-auto sm:max-w-[250px] rounded-xl object-cover"
           alt="Jothi"
         />
 

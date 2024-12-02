@@ -9,7 +9,7 @@ const Vision = ({ snapAlign = "start" }) => {
       {/* Bharathiyar Image */}
       <img
         src={Bharathi}
-        className="rounded-2xl w-full max-w-[300px] sm:max-w-[400px] object-cover"
+        className="rounded-2xl w-full mx-auto max-w-[300px] sm:max-w-[400px] object-cover"
         alt="Subramania Bharathiyar"
       />
 
