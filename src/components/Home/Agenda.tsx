@@ -62,7 +62,7 @@ const Agenda = ({ snapAlign = "start" }) => {
                   index % 2 === 0 ? "left-0" : "right-0"
                 }`}
               >
-                <h1 className="text-[25px] font-medium">{contents}</h1>
+                <h1 className="text-[25px] font-medium">{content}</h1>
               </div>
               {/* Lottie Animation */}
               {isAnimationVisible && index % 2 === 0 ? (
