@@ -1,15 +1,20 @@
-import React from "react";
+import Logo from "../../assets/msp_logo.png";
 
 const AboutMain = () => {
   return (
     <>
-      <div className="bg-red-900 w-full flex justify-center items-center">
-        <div className="w-[86vw] sm:w-[580px] md:w-[680px] lg:w-[900px] xl:w-[1200px] h-auto bg-red-900 pb-16 md:pb-24 pt-28 md:pt-40 top-0">
-          <h1 className="text-[29px] sm:text-[40px] lg:text-[50px] xl:text-[70px] text-amber-500 font-bold text-center">
-            மக்கள் சிந்தனை பேரவை
-          </h1>
-
-          <p className="mt-6 md:mt-8 text-justify text-white text-opacity-80 font-medium text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px]">
+      <div className="bg-red-900 w-full h-auto flex flex-col justify-center items-center pt-32 pb-10 gap-y-10">
+        <h1 className="text-[29px] sm:text-[40px] lg:text-[50px] xl:text-[70px] text-amber-500 font-bold text-center">
+          மக்கள் சிந்தனை பேரவை
+        </h1>
+        <div className="w-[360px] md:w-[600px] lg:w-[1000px] xl:w-[1200px] flex flex-col lg:flex-row justify-between items-center lg:items-start gap-x-14">
+          {/* Image */}
+          <img
+            src={Logo}
+            className="w-full max-w-[300px] sm:max-w-[400px] rounded-xl object-cover shadow-md md:shadow-none"
+            alt="MSP Logo"
+          />
+          <p className="text-justify text-white text-opacity-80 font-medium text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] mt-12 lg:mt-0">
             இந்தியாவின் தலைசிறந்த கவிஞர்களில் ஒருவராகும். அவர் 1882 ஆம் ஆண்டு
             டிசம்பர் 11 அன்று தமிழ்நாட்டின் எட்டயபுரத்தில் பிறந்தார். பாரதியார்
             தனியுரிமை, சமத்துவம், தேசபக்தி, மகளிர் சுதந்திரம் மற்றும் சமூக
@@ -27,18 +32,6 @@ const AboutMain = () => {
             சுதந்திரம் மற்றும் சமூக நீதிக்காக பாடுபட்ட கவிஞர், எழுத்தாளர்
             மற்றும் தேசியவாதியாகத் திகழ்ந்தார். தான் எழுதிய கவிதைகள் மூலம் தமிழ்
             இலக்கியத்திற்கு புதிய ஒளியை வழங்கியவர். அவர் "தமிழ் காற்று".
-            இந்தியாவின் தலைசிறந்த கவிஞர்களில் ஒருவராகும். அவர் 1882 ஆம் ஆண்டு
-            டிசம்பர் 11 அன்று தமிழ்நாட்டின் எட்டயபுரத்தில் பிறந்தார். பாரதியார்
-            தனியுரிமை, சமத்துவம், தேசபக்தி, மகளிர் சுதந்திரம் மற்றும் சமூக
-            நீதிக்காக பாடுபட்ட கவிஞர், எழுத்தாளர் மற்றும் தேசியவாதியாகத்
-            திகழ்ந்தார். தான் எழுதிய கவிதைகள் மூலம் தமிழ் இலக்கியத்திற்கு புதிய
-            ஒளியை வழங்கியவர். அவர் "தமிழ் காற்று". இந்தியாவின் தலைசிறந்த
-            கவிஞர்களில் ஒருவராகும். அவர் 1882 ஆம் ஆண்டு டிசம்பர் 11 அன்று
-            தமிழ்நாட்டின் எட்டயபுரத்தில் பிறந்தார். பாரதியார் தனியுரிமை,
-            சமத்துவம், தேசபக்தி, மகளிர் சுதந்திரம் மற்றும் சமூக நீதிக்காக
-            பாடுபட்ட கவிஞர், எழுத்தாளர் மற்றும் தேசியவாதியாகத் திகழ்ந்தார். தான்
-            எழுதிய கவிதைகள் மூலம் தமிழ் இலக்கியத்திற்கு புதிய ஒளியை வழங்கியவர்.
-            அவர் "தமிழ் காற்று".
           </p>
         </div>
       </div>

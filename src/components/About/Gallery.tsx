@@ -1,23 +1,15 @@
 // Define props interface
 interface CardProps {
   image: string;
-  title: string;
-  description: string;
 }
 
 // Reusable Card Component
-const Card: React.FC<CardProps> = ({ image, title, description }) => {
+const Card: React.FC<CardProps> = ({ image }) => {
   return (
-    <div className="relative border border-gray-200 rounded-lg shadow-lg overflow-hidden group w-[360px] h-[220px] sm:w-[265px] sm:h-[170px] md:w-[338px] md:h-[220px] lg:w-[304px] lg:h-[200px] xl:w-[384px] xl:h-[250px]">
+    <div className="relative border-gray-200 border-[2px] hover:border-amber-500 rounded-lg shadow-lg overflow-hidden group w-[360px] h-[220px] sm:w-[285px] sm:h-[175px] md:w-[338px] md:h-[220px] lg:w-[470px] lg:h-[330px] xl:w-[584px] xl:h-[400px] transition-all duration-500 ease-in-out">
       {/* Image */}
       <div className="absolute inset-0 transition-transform duration-500 ease-linear group-hover:scale-[1.03]">
-        <img src={image} alt={title} className="w-full h-full object-cover" />
-      </div>
-      {/* Text */}
-      <div className="absolute bottom-0 w-full py-1 px-6 bg-red-800 bg-opacity-80 backdrop-blur-[4px] transition-all duration-1000 ease-linear group-hover:opacity-0">
-        <h3 className="text-[22px] sm:text-[22px] md:text-[20px] lg:text-[23px] xl:text-[30px] text-center font-semibold text-amber-500">
-          {title}
-        </h3>
+        <img src={image} alt="" className="w-full h-full object-cover" />
       </div>
     </div>
   );
@@ -80,14 +72,9 @@ const Gallery: React.FC = () => {
             கலை காட்சி
           </h1>
         </div>
-        <div className="w-[360px] sm:w-[600px] md:w-[700px] lg:w-[960px] xl:w-[1200px] mx-auto grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+        <div className="w-[360px] sm:w-[600px] md:w-[700px] lg:w-[960px] xl:w-[1200px] mx-auto grid gap-6 grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3">
           {cardData.map((card, index) => (
-            <Card
-              key={index}
-              image={card.image}
-              title={card.title}
-              description={card.description}
-            />
+            <Card key={index} image={card.image} />
           ))}
         </div>
       </div>

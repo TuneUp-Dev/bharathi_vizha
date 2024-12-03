@@ -2,14 +2,7 @@ import Bharathi from "../../assets/bharathi.png";
 
 const Vision = () => {
   return (
-    <div className="w-full max-w-[1200px] mx-auto h-auto mt-32 px-5 sm:px-10 flex flex-col lg:flex-row justify-between items-start gap-y-10 lg:gap-y-0 lg:gap-x-20">
-      {/* Bharathiyar Image */}
-      <img
-        src={Bharathi}
-        className="rounded-2xl w-full mx-auto max-w-[300px] sm:max-w-[400px] object-cover"
-        alt="Subramania Bharathiyar"
-      />
-
+    <div className="w-full max-w-[1200px] mx-auto h-auto pt-20 md:pt-10 px-5 sm:px-10 lg:pt-36 flex flex-col-reverse lg:flex-row justify-between items-start gap-y-10 lg:gap-y-0 lg:gap-x-20">
       {/* Vision Text */}
       <div className="text-black">
         <h1 className="text-[32px] sm:text-[40px] lg:text-[50px] text-red-900 font-bold mb-5 text-center lg:text-left">
@@ -21,6 +14,13 @@ const Vision = () => {
           ஒன்று 'பாரதி விழா'
         </p>
       </div>
+
+      {/* Bharathiyar Image */}
+      <img
+        src={Bharathi}
+        className="rounded-2xl w-full mx-auto max-w-[300px] sm:max-w-[400px] object-cover"
+        alt="Subramania Bharathiyar"
+      />
     </div>
   );
 };
