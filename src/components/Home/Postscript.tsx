@@ -1,11 +1,8 @@
 import Newspaper from "../../assets/bharathi.png";
 
-const Postscript = ({ snapAlign = "start" }) => {
+const Postscript = () => {
   return (
-    <div
-      style={{ scrollSnapAlign: snapAlign }}
-      className="w-full max-w-[1200px] mx-auto h-auto pt-20 md:pt-10 px-5 sm:px-10 lg:pt-36 flex justify-center items-end"
-    >
+    <div className="w-full max-w-[1200px] mx-auto h-auto mt-20 px-5 sm:px-10 flex justify-center items-end">
       <div className="w-full bg-gray-100 rounded-xl text-center px-5 sm:px-10 lg:px-16 py-8">
         {/* Title */}
         <h1 className="text-[15px] sm:text-[22px] lg:text-[25px] text-black underline underline-offset-4 font-semibold mb-8">
@@ -16,7 +13,7 @@ const Postscript = ({ snapAlign = "start" }) => {
         <div className="flex flex-col lg:flex-row justify-between items-start gap-y-10 lg:gap-y-0 gap-x-10">
           {/* Text Section */}
           <div className="flex-1 text-start">
-            <h1 className="text-[24px] sm:text-[36px] lg:text-[50px] text-red-900 font-bold mb-5">
+            <h1 className="text-[24px] sm:text-[36px] lg:text-[50px] text-red-900 font-bold mb-5 leading-[60px]">
               பேரவையின் ஜப்பான் கிளை சார்பில் பாரதி விழா:
             </h1>
             <p className="text-[14px] sm:text-[16px] leading-relaxed font-medium">

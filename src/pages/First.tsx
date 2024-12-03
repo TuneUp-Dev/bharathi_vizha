@@ -8,7 +8,7 @@ const First = () => {
       <div className="overflow-y-scroll h-screen pt-20 scroll-smooth transition-all duration-300 ease-linear snap-y snap-mandatory scrollbar scrollbar-thumb-red-900 scrollbar-track-gray-100">
         <Navbar />
         <FirstMain />
-        <Footer snapAlign="none" />
+        <Footer />
       </div>
     </>
   );

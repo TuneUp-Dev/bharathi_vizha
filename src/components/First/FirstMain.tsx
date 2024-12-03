@@ -94,9 +94,11 @@ const FirstMain: React.FC = () => {
           ))}
         </div>
         <div className="w-full flex items-center justify-center mt-14">
-          <Button size="lg" className="bg-amber-500 text-red-900 font-medium">
-            <Link to={"/2007-2015"}>Next Page</Link>
-          </Button>
+          <Link to={"/2007-2015"}>
+            <Button size="lg" className="bg-amber-500 text-red-900 font-medium">
+              Next Page
+            </Button>
+          </Link>
         </div>
       </div>
     </>

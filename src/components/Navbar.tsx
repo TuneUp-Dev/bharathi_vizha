@@ -47,7 +47,7 @@ const Navbar = () => {
         {/* Contact Us Button (Visible in all screen sizes) */}
         <div className="hidden lg:block">
           <Link to={"/contact"}>
-            <Button className="bg-red-800 text-white" size="lg">
+            <Button className="bg-red-900 text-white" size="lg">
               Contact us
             </Button>
           </Link>
@@ -89,7 +89,7 @@ const Navbar = () => {
           </Link>
         ))}
         <Link to={"/contact"}>
-          <Button className="bg-red-950 text-white" size="lg">
+          <Button className="bg-red-900 text-white" size="lg">
             Contact us
           </Button>
         </Link>

@@ -94,12 +94,16 @@ const SecondMain: React.FC = () => {
           ))}
         </div>
         <div className="w-full flex items-center justify-center mt-14 gap-x-5">
-          <Button size="lg" className="bg-amber-500 text-red-900 font-medium">
-            <Link to={"/1998-2006"}>Previous Page</Link>
-          </Button>
-          <Button size="lg" className="bg-amber-500 text-red-900 font-medium">
-            <Link to={"/2016-2023"}>Next Page</Link>
-          </Button>
+          <Link to={"/1998-2006"}>
+            <Button size="lg" className="bg-amber-500 text-red-900 font-medium">
+              Previous Page
+            </Button>
+          </Link>
+          <Link to={"/2016-2023"}>
+            <Button size="lg" className="bg-amber-500 text-red-900 font-medium">
+              Next Page
+            </Button>
+          </Link>
         </div>
       </div>
     </>

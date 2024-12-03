@@ -4,13 +4,10 @@ import YoutubeIcon from "../assets/Icons/YoutubeIcon";
 import InstagramIcon from "../assets/Icons/InstagramIcon";
 import FacebookIcon from "../assets/Icons/facebook.svg";
 
-const Footer = ({ snapAlign = "start" }) => {
+const Footer = () => {
   return (
     <>
-      <footer
-        style={{ scrollSnapAlign: snapAlign }}
-        className="w-full text-neutral-400 mt-20 bg-red-800"
-      >
+      <footer className="w-full text-neutral-400 mt-20 bg-red-900">
         {/* Copyright and Social Links */}
         <div className="w-full py-14">
           <div className="max-w-[86vw] md:max-w-[88vw] xl:max-w-[1100px] mx-auto flex flex-col md:flex-row justify-between items-start">
