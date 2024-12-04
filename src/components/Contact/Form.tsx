@@ -22,7 +22,7 @@ const Form = () => {
                   <input
                     type="text"
                     id="name"
-                    className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-amber-500"
                     placeholder="உங்கள் பெயரை உள்ளிடவும்"
                   />
                 </div>
@@ -38,7 +38,7 @@ const Form = () => {
                   <input
                     type="number"
                     id="age"
-                    className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-amber-500"
                     placeholder="உங்கள் வயதை உள்ளிடவும்"
                   />
                 </div>
@@ -54,7 +54,7 @@ const Form = () => {
                   <input
                     type="text"
                     id="education"
-                    className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-amber-500"
                     placeholder="உங்கள் கல்வித்தகுதியை உள்ளிடவும்"
                   />
                 </div>
@@ -70,24 +70,9 @@ const Form = () => {
                   <input
                     type="text"
                     id="occupation"
-                    className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-amber-500"
                     placeholder="உங்கள் பணியை உள்ளிடவும்"
                   />
-                </div>
-
-                {/* Address */}
-                <div>
-                  <label
-                    className="block text-amber-500 font-semibold mb-2"
-                    htmlFor="address"
-                  >
-                    முகவரி
-                  </label>
-                  <textarea
-                    id="address"
-                    className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="உங்கள் முகவரியை உள்ளிடவும்"
-                  ></textarea>
                 </div>
 
                 {/* Email */}
@@ -101,7 +86,7 @@ const Form = () => {
                   <input
                     type="email"
                     id="email"
-                    className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-amber-500"
                     placeholder="உங்கள் மின்னஞ்சலை உள்ளிடவும்"
                   />
                 </div>
@@ -117,10 +102,25 @@ const Form = () => {
                   <input
                     type="text"
                     id="whatsapp"
-                    className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-amber-500"
                     placeholder="உங்கள் வாட்ஸ் ஆப் எண்ணை உள்ளிடவும்"
                   />
                 </div>
+              </div>
+
+              {/* Address */}
+              <div className="mt-5">
+                <label
+                  className="block text-amber-500 font-semibold mb-2"
+                  htmlFor="address"
+                >
+                  முகவரி
+                </label>
+                <textarea
+                  id="address"
+                  className="w-full border border-gray-300 rounded-lg p-3 resize-none focus:outline-none focus:ring-2 focus:ring-amber-500"
+                  placeholder="உங்கள் முகவரியை உள்ளிடவும்"
+                ></textarea>
               </div>
 
               <Button

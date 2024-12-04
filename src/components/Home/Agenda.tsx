@@ -21,7 +21,7 @@ const Agenda = () => {
       <h1 className="text-[21px] md:text-[40px] xl:text-[50px] text-amber-500 font-bold mb-10 mt-20">
         பாரதி விழா 2024 தொகுப்பு
       </h1>
-      <div className="space-y-10 md:space-y-0 w-full">
+      <div className="space-y-10 md:space-y-0 min-w-full">
         {contents.map((content, index) => {
           // Split content by newline and render parts with <br />
           const formattedContent = content.split("\n").map((line, idx) => (
@@ -36,8 +36,12 @@ const Agenda = () => {
           return (
             <div
               key={index}
-              className={`w-[90vw] mx-auto h-auto xl:h-auto lg:h-[440px] sm:min-w-[560px] sm:h-[400px] md:h-[400px] lg:min-w-[960px] xl:min-w-[1200px] md:mt-[-120px] md:pt-[140px] flex flex-col md:flex-row items-center justify-center ${
-                index % 2 === 0 ? "lg:justify-start" : "lg:justify-end"
+              className={`w-[90vw] mx-auto h-auto xl:h-auto lg:h-[440px] sm:min-w-[560px] md:h-[400px] lg:min-w-[960px] xl:min-w-[1200px] md:mt-[-120px] md:pt-[140px] flex flex-col md:flex-row items-center justify-center ${
+                index === contents.length - 1
+                  ? "lg:pl-[38.8rem] lg:justify-end"
+                  : index % 2 === 0
+                  ? "lg:justify-start"
+                  : "lg:justify-end"
               }`}
             >
               {isAnimationVisible && index % 2 !== 0 ? (
@@ -49,6 +53,8 @@ const Agenda = () => {
                     width: "300px",
                     marginTop: "15rem",
                     marginBottom: "-10rem",
+                    marginLeft: "23rem",
+                    marginRight: "-3rem",
                     rotate: "120deg",
                     filter: "hue-rotate(200deg) brightness(0.8)",
                   }}
@@ -56,11 +62,11 @@ const Agenda = () => {
                 />
               ) : null}
               <div
-                className={`w-[90vw] mx-auto sm:w-[560px] flex justify-center items-center text-center bg-gray-200 p-8 md:w-[600px] lg:w-[500px] md:h-[360px] lg:h-[300px] xl:w-[600px] rounded-lg shadow-lg overflow-hidden ${
+                className={`w-[90vw] mx-auto sm:w-[560px] flex justify-center items-center text-center bg-gray-200 p-8 md:w-[600px] lg:min-w-[450px] md:h-[360px] lg:h-[300px] xl:w-[600px] rounded-lg shadow-lg overflow-hidden ${
                   index % 2 === 0 ? "left-0" : "right-0"
                 }`}
               >
-                <h1 className="text-[14px] md:text-[20px] lg:text-[22px] xl:text-[23px] font-medium">
+                <h1 className="text-[14px] md:text-[20px] lg:text-[21px] xl:text-[22px] font-medium">
                   {formattedContent}
                 </h1>
               </div>
@@ -73,6 +79,8 @@ const Agenda = () => {
                     width: "300px",
                     marginTop: "15rem",
                     marginBottom: "-10rem",
+                    marginRight: "23rem",
+                    marginLeft: "-3rem",
                     rotate: "-120deg",
                     transform: "scaleX(-1)",
                     filter: "hue-rotate(200deg) brightness(0.8)",
