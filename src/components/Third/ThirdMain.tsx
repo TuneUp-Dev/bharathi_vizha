@@ -1,4 +1,11 @@
-import { Button } from "@nextui-org/react";
+import {
+  Button,
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalHeader,
+} from "@nextui-org/react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 // Define props interface
@@ -6,12 +13,16 @@ interface CardProps {
   image: string;
   title: string;
   description: string;
+  onClick: () => void;
 }
 
 // Reusable Card Component
-const Card: React.FC<CardProps> = ({ image, title, description }) => {
+const Card: React.FC<CardProps> = ({ image, title, onClick }) => {
   return (
-    <div className="relative border border-gray-200 rounded-lg shadow-lg overflow-hidden group mx-auto w-[90vw] h-[200px] sm:w-[265px] sm:h-[170px] md:w-[338px] md:h-[220px] lg:w-[304px] lg:h-[200px] xl:w-[384px] xl:h-[250px]">
+    <div
+      onClick={onClick}
+      className="relative cursor-pointer border border-gray-200 rounded-lg shadow-lg overflow-hidden group mx-auto w-[90vw] h-[200px] sm:w-[265px] sm:h-[170px] md:w-[338px] md:h-[220px] lg:w-[304px] lg:h-[200px] xl:w-[384px] xl:h-[250px]"
+    >
       {/* Image */}
       <div className="absolute inset-0 transition-transform duration-500 ease-linear group-hover:scale-[1.03]">
         <img src={image} alt={title} className="w-full h-full object-cover" />
@@ -70,6 +81,23 @@ const ThirdMain: React.FC = () => {
     },
   ];
 
+  const [visible, setVisible] = useState(false);
+  const [selectedCard, setSelectedCard] = useState<{
+    title: string;
+    description: string;
+    image: string;
+  } | null>(null);
+
+  const openModal = (card: (typeof cardData)[number]) => {
+    setSelectedCard(card);
+    setVisible(true);
+  };
+
+  const closeModal = () => {
+    setVisible(false);
+    setSelectedCard(null);
+  };
+
   return (
     <>
       <div>
@@ -85,6 +113,7 @@ const ThirdMain: React.FC = () => {
               image={card.image}
               title={card.title}
               description={card.description}
+              onClick={() => openModal(card)}
             />
           ))}
         </div>
@@ -96,6 +125,42 @@ const ThirdMain: React.FC = () => {
           </Link>
         </div>
       </div>
+
+      {/* Popup Modal */}
+      <Modal
+        className="h-[70vh] min-w-[60vw]"
+        isOpen={visible}
+        onOpenChange={(isOpen) => {
+          if (!isOpen) closeModal();
+        }}
+        isDismissable
+      >
+        <ModalContent>
+          {() => (
+            <>
+              {selectedCard && (
+                <>
+                  <div className="w-full h-auto overflow-y-auto p-2 pb-8 scrollbar scrollbar-thumb-red-900 scrollbar-track-gray-100">
+                    <ModalHeader className="text-[35px] text-red-900">
+                      {selectedCard.title}
+                    </ModalHeader>
+                    <ModalBody>
+                      <img
+                        src={selectedCard.image}
+                        alt={selectedCard.title}
+                        className="rounded-lg mb-4 -mt-4"
+                      />
+                      <p className="mt-2 text-justify">
+                        {selectedCard.description}
+                      </p>
+                    </ModalBody>
+                  </div>
+                </>
+              )}
+            </>
+          )}
+        </ModalContent>
+      </Modal>
     </>
   );
 };

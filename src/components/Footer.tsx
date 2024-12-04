@@ -3,6 +3,7 @@ import Logo from "../assets/msp_logo.png";
 import YoutubeIcon from "../assets/Icons/YoutubeIcon";
 import InstagramIcon from "../assets/Icons/InstagramIcon";
 import FacebookIcon from "../assets/Icons/facebook.svg";
+import WebsiteIcon from "../assets/Icons/website.svg";
 
 const Footer = () => {
   return (
@@ -28,14 +29,29 @@ const Footer = () => {
 
             {/* Social Links */}
             <div className="mx-auto md:mx-0 flex space-x-4">
-              <Link to="#" target="_blank">
+              <Link
+                to="https://www.youtube.com/@makkalsinthanaiperavai"
+                target="_blank"
+              >
                 <YoutubeIcon />
               </Link>
-              <Link to="#" target="_blank">
+              <Link
+                to="https://www.instagram.com/makkalsinthanaiperavai/"
+                target="_blank"
+              >
                 <InstagramIcon />
               </Link>
-              <Link to="#" target="_blank">
+              <Link
+                to="https://www.facebook.com/makkalsinthanaiperavaierode"
+                target="_blank"
+              >
                 <img src={FacebookIcon} className="w-5" alt="" />
+              </Link>
+              <Link
+                to="https://www.makkalsinthanaiperavai.org/"
+                target="_blank"
+              >
+                <img src={WebsiteIcon} className="w-4 mt-0.5" alt="" />
               </Link>
             </div>
           </div>

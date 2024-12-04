@@ -7,6 +7,7 @@ import Jothi from "../components/Home/Jothi";
 import AboutMSP from "../components/Home/AboutMSP";
 import Postscript from "../components/Home/Postscript";
 import Footer from "../components/Footer";
+import VideoPlayer from "../components/Home/VideoPlayer";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
         <Jothi />
         <AboutMSP />
         <Postscript />
+        <VideoPlayer />
         <Footer />
       </div>
     </>
