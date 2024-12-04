@@ -11,7 +11,7 @@ interface CardProps {
 // Reusable Card Component
 const Card: React.FC<CardProps> = ({ image, title, description }) => {
   return (
-    <div className="relative border border-gray-200 rounded-lg shadow-lg overflow-hidden group w-[360px] h-[220px] sm:w-[265px] sm:h-[170px] md:w-[338px] md:h-[220px] lg:w-[304px] lg:h-[200px] xl:w-[384px] xl:h-[250px]">
+    <div className="relative border border-gray-200 rounded-lg shadow-lg overflow-hidden group mx-auto w-[90vw] h-[200px] sm:w-[265px] sm:h-[170px] md:w-[338px] md:h-[220px] lg:w-[304px] lg:h-[200px] xl:w-[384px] xl:h-[250px]">
       {/* Image */}
       <div className="absolute inset-0 transition-transform duration-500 ease-linear group-hover:scale-[1.03]">
         <img src={image} alt={title} className="w-full h-full object-cover" />

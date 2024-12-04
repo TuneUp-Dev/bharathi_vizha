@@ -5,13 +5,13 @@ const AboutMain = () => {
     <>
       <div className="bg-red-900 w-full h-auto flex flex-col justify-center items-center pt-32 pb-10 gap-y-10">
         <h1 className="text-[29px] sm:text-[40px] lg:text-[50px] xl:text-[70px] text-amber-500 font-bold text-center">
-          மக்கள் சிந்தனை பேரவை
+          மக்கள் சிந்தனைப் பேரவை
         </h1>
-        <div className="w-[360px] md:w-[600px] lg:w-[1000px] xl:w-[1200px] flex flex-col lg:flex-row justify-between items-center lg:items-start gap-x-14">
+        <div className="w-[90vw] md:w-[600px] lg:w-[1000px] xl:w-[1200px] flex flex-col lg:flex-row justify-between items-center lg:items-start gap-x-14">
           {/* Image */}
           <img
             src={Logo}
-            className="w-full max-w-[300px] sm:max-w-[400px] rounded-xl object-cover shadow-md md:shadow-none"
+            className="w-full max-w-[300px] sm:max-w-[400px] rounded-xl object-cover"
             alt="MSP Logo"
           />
           <p className="text-justify text-white text-opacity-80 font-medium text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] mt-12 lg:mt-0">

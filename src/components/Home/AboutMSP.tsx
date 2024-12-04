@@ -10,7 +10,7 @@ const AboutMSP = () => {
               {/* Text Content */}
               <div className="w-full h-auto">
                 <h1 className="text-[32px] sm:text-[40px] lg:text-[50px] text-amber-500 font-bold mb-5 text-center lg:text-left leading-[55px]">
-                  மக்கள் சிந்தனை பேரவை
+                  மக்கள் சிந்தனைப் பேரவை
                 </h1>
                 <p className="text-[14px] sm:text-[16px] text-white font-medium leading-relaxed text-justify lg:text-left">
                   இந்தியாவின் தலைசிறந்த கவிஞர்களில் ஒருவராகும். அவர் 1882 ஆம்
