@@ -25,7 +25,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "docker:build": "docker build -t bharathi_vizha .",
+    "docker:run": "docker run -p 8800:80 bharathi_vizha"
   },
   "eslintConfig": {
     "extends": [

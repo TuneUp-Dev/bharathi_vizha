@@ -17,11 +17,11 @@ const Agenda = () => {
   ];
 
   return (
-    <div className="h-[2680px] md:h-auto text-center md:text-start mt-32 pb-20 flex flex-col items-center bg-red-900 justify-start px-8">
+    <div className="h-auto text-center md:text-start mt-32 pb-16 md:pb-20 flex flex-col items-center bg-red-900 justify-start px-8">
       <h1 className="text-[21px] md:text-[40px] xl:text-[50px] text-amber-500 font-bold mb-10 mt-20">
         பாரதி விழா 2024 தொகுப்பு
       </h1>
-      <div className="space-y-0">
+      <div className="space-y-10 md:space-y-0 w-full">
         {contents.map((content, index) => {
           // Split content by newline and render parts with <br />
           const formattedContent = content.split("\n").map((line, idx) => (
@@ -36,8 +36,8 @@ const Agenda = () => {
           return (
             <div
               key={index}
-              className={`min-w-[320px] h-[240px] xl:h-auto lg:h-[440px] sm:min-w-[560px] sm:h-[400px] md:h-[400px] lg:min-w-[960px] xl:min-w-[1200px] md:mt-[-120px] md:pt-[140px] flex items-start md:items-center ${
-                index % 2 === 0 ? "justify-start" : "justify-end"
+              className={`w-[90vw] mx-auto h-auto xl:h-auto lg:h-[440px] sm:min-w-[560px] sm:h-[400px] md:h-[400px] lg:min-w-[960px] xl:min-w-[1200px] md:mt-[-120px] md:pt-[140px] flex flex-col md:flex-row items-center justify-center ${
+                index % 2 === 0 ? "lg:justify-start" : "lg:justify-end"
               }`}
             >
               {isAnimationVisible && index % 2 !== 0 ? (
@@ -56,11 +56,13 @@ const Agenda = () => {
                 />
               ) : null}
               <div
-                className={`min-w-[320px] sm:w-[560px] flex justify-center items-center text-center bg-gray-200 p-8 md:w-[600px] lg:w-[500px] md:h-[360px] lg:h-[300px] xl:w-[600px] rounded-lg shadow-lg overflow-hidden ${
+                className={`w-[90vw] mx-auto sm:w-[560px] flex justify-center items-center text-center bg-gray-200 p-8 md:w-[600px] lg:w-[500px] md:h-[360px] lg:h-[300px] xl:w-[600px] rounded-lg shadow-lg overflow-hidden ${
                   index % 2 === 0 ? "left-0" : "right-0"
                 }`}
               >
-                <h1 className="text-[23px] font-medium">{formattedContent}</h1>
+                <h1 className="text-[14px] md:text-[20px] lg:text-[22px] xl:text-[23px] font-medium">
+                  {formattedContent}
+                </h1>
               </div>
               {isAnimationVisible && index % 2 === 0 ? (
                 <Player
@@ -82,6 +84,10 @@ const Agenda = () => {
           );
         })}
       </div>
+      <h1 className="text-[12px] md:text-[15px] xl:text-[19px] text-center text-red-900 bg-amber-500 p-5 rounded-xl font-bold mb-10 mt-20 md:mt-24 lg:mt-28">
+        பாரதி விருது கேடயம் மற்றும் தகுதிப் பட்டயத்துடன் பொற்கிழியாக ரூ.
+        50,000/- தொகையை உள்ளடக்கியதாகும்
+      </h1>
     </div>
   );
 };

@@ -6,7 +6,7 @@ interface CardProps {
 // Reusable Card Component
 const Card: React.FC<CardProps> = ({ image }) => {
   return (
-    <div className="relative border-gray-200 border-[2px] hover:border-amber-500 rounded-lg shadow-lg overflow-hidden group w-[360px] h-[220px] sm:w-[285px] sm:h-[175px] md:w-[338px] md:h-[220px] lg:w-[470px] lg:h-[330px] xl:w-[584px] xl:h-[400px] transition-all duration-500 ease-in-out">
+    <div className="relative border-gray-200 border-[2px] hover:border-amber-500 rounded-lg shadow-lg overflow-hidden group mx-auto w-[90vw] h-[200px] sm:w-[285px] sm:h-[175px] md:w-[338px] md:h-[220px] lg:w-[470px] lg:h-[330px] xl:w-[584px] xl:h-[400px] transition-all duration-500 ease-in-out">
       {/* Image */}
       <div className="absolute inset-0 transition-transform duration-500 ease-linear group-hover:scale-[1.03]">
         <img src={image} alt="" className="w-full h-full object-cover" />
