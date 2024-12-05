@@ -3,11 +3,11 @@ const AboutMSP = () => {
     <>
       <div className="w-full h-auto mt-24">
         <div className="bg-red-900 w-full h-auto">
-          <div className="w-full max-w-[1200px] mx-auto h-auto px-5 sm:px-10 flex justify-center items-center">
+          <div className="w-full max-w-[1200px] mx-auto h-auto sm:px-10 flex justify-center items-center">
             <div className="w-full rounded-xl flex flex-col-reverse lg:flex-row justify-between items-start gap-y-10 lg:gap-x-10 lg:gap-y-0 px-5 sm:px-10 lg:px-16 py-8">
               {/* Text Content */}
               <div className="w-full h-auto">
-                <h1 className="text-[32px] sm:text-[40px] lg:text-[50px] text-amber-500 font-bold mb-5 text-center lg:text-left leading-[55px]">
+                <h1 className="text-[32px] sm:text-[40px] lg:text-[50px] text-amber-500 font-bold mb-5 text-left leading-[40px] md:leading-[55px]">
                   மக்கள் சிந்தனைப் பேரவை
                 </h1>
                 <p className="text-[14px] sm:text-[16px] text-white font-medium leading-relaxed text-justify lg:text-left">
