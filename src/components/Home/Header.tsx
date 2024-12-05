@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="w-full h-screen md:h-[600px] lg:h-[700px] xl:h-[800px] xl:max-h-screen bg-red-950 overflow-hidden relative noto">
+      <div className="w-full h-screen md:h-[600px] lg:h-[700px] xl:h-[800px] xl:max-h-screen bg-red-900 overflow-hidden relative noto">
         <div
           className={`absolute top-[90px] md:top-[120px] text-center w-full flex justify-center items-center transform text-amber-500 font-bold transition-all duration-1000 ease-in-out ${
             isVisible ? "opacity-100" : "opacity-0"
@@ -34,7 +34,7 @@ const Header = () => {
             }`}
             alt="Background"
           />
-          <div className="absolute bottom-0 z-30 w-full h-[60px] md:h-[100px] bg-gradient-to-t from-red-950 to-transparent"></div>
+          <div className="absolute bottom-0 z-30 w-full h-[60px] md:h-[100px] bg-gradient-to-t from-red-900 to-transparent"></div>
         </div>
 
         <div

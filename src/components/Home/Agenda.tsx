@@ -1,4 +1,5 @@
 import React from "react";
+import bgImage from "../../assets/bg.webp";
 import { Player } from "@lottiefiles/react-lottie-player";
 
 const Agenda = () => {
@@ -17,7 +18,10 @@ const Agenda = () => {
   ];
 
   return (
-    <div className="h-auto text-center md:text-start mt-32 pb-16 md:pb-20 flex flex-col items-center bg-red-900 justify-start px-8">
+    <div
+      className="h-auto text-center md:text-start mt-32 pb-16 md:pb-20 flex flex-col items-center justify-start px-8 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${bgImage})` }}
+    >
       <h1 className="text-[21px] md:text-[40px] xl:text-[50px] text-amber-500 font-bold mb-10 mt-20">
         பாரதி விழா 2024 தொகுப்பு
       </h1>
