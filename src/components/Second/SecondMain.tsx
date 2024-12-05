@@ -147,7 +147,7 @@ const SecondMain: React.FC = () => {
 
       {/* Popup Modal */}
       <Modal
-        className="h-[70vh] min-w-[60vw]"
+        className="max-h-[78vh] md:h-[70vh] min-w-[60vw]"
         isOpen={visible}
         onOpenChange={(isOpen) => {
           if (!isOpen) closeModal();
