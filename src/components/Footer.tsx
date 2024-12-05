@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Logo from "../assets/msp_logo.png";
 import YoutubeIcon from "../assets/Icons/YoutubeIcon";
 import InstagramIcon from "../assets/Icons/InstagramIcon";
 import FacebookIcon from "../assets/Icons/facebook.svg";
@@ -15,7 +14,11 @@ const Footer = () => {
             {/* Logo and Caption */}
             <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">
               <div className="md:block flex flex-col items-center justify-center text-center md:text-left w-full md:w-[410px]">
-                <img className="w-12 cursor-pointer" src={Logo} alt="" />
+                <img
+                  className="w-12 cursor-pointer"
+                  src={"https://i.ibb.co/41gGKnr/msp-logo.png"}
+                  alt=""
+                />
                 <p className="text-white text-[11px] lg:text-[13px] xl:text-[15.5px] font-semibold mt-3">
                   &copy; {new Date().getFullYear()} Makkal Sinthani Peravai,
                   Inc. All rights reserved.

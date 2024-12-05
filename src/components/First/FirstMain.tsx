@@ -42,48 +42,56 @@ const FirstMain: React.FC = () => {
     {
       image: "https://i.ibb.co/dLdNXDW/1998.jpg",
       title: "1998",
-      description: "This is a description or additional content for card 1.",
+      description:
+        "முதல் 'பாரதி விருது' பெற்ற எழுத்தாளர் பொன்னீலன் விருதினைப் பெற்றுக்கொண்டு ஏற்புரை நிகழ்த்திய போது எடுத்த படம். மேடையில் மக்கள் சிந்தனை பெறவையின் தலைவர் த.ஸ்டாலின் குணசேகரன், தேசிய நல விழிப்புணர்வு இயக்கத்தின் தலைவர் எஸ்கேஎம்.மயிலானந்தன், பாரதி வித்யா பவன் பள்ளியின் தாளாளர் டாக்டர் எல்.எம்.இராமகிருஷ்ணன் ஆகியோர் உள்ளனர்.",
     },
     {
       image: "https://i.ibb.co/nbR7Zkw/1999.jpg",
       title: "1999",
       description:
-        "This is a description or additional content for card 2. lorekjsibscicubwiusjbiuhw iuwgiwbc wugw cuwybcwc uywcb wgwugvwquguwcgf qbuwgu bfyg aefigiw vbienve euvyei fejviu   bwjgiwnrtuw ck bugu ervyewfefhwfwi43biureguegoih87wgo4ue32bku vfd78eh  g 8 bi g8 g 8we euihe euigevi iu3eieur uiegi eei  ib93 eevw7ug39y3 vr kj  sniiew rvuheiv iuene einvinv fiu w  ev8 iuebi vr 8e ek uwyw jvr uyw w vuwyv jvr ivew vuiwevbiwev vfiwe v bvwe wevl vwwevkjvw uycwbkwv iuvw wvkjvbuiwv vwuiwve 9ewqn voi;n q9f4qi niuqer iub iuwh fuwiu nwherwfwniv u eufh9erwhiberiqb",
+        "பாரதியியல் ஆய்வாளர் பெ.சு.மணி விருது பெற்றார். விருது வழங்கி விழாச் சிறப்புரையாற்றியவர் பொதுவுடமை இயக்கத் தலைவர் தா.பாண்டியன். சுதந்திரப் போராட்டத் தியாகிகள் ஐ.மாயாண்டிபாரதி, கே.சுப்பராயலு, பி.ராமசாமி, கி.லட்சுமிகாந்தன்பாரதி ஐஏஎஸ் ஆகியோர் சிறப்பு விருந்தினர்களாகப் பங்கேற்றனர்.",
     },
     {
       image: "https://i.ibb.co/kH0BTtX/2000.jpg",
       title: "2000",
-      description: "This is a description or additional content for card 3.",
+      description:
+        "'பாரதி' திரைப்பட இயக்குனர் ஞானராஜசேகரன் விருது பெற்றார். இலக்கியச் செல்வர் குமரி அனந்தன் விழாச் சிறப்புரையாற்றினார்",
     },
     {
       image: "https://i.ibb.co/LYHwFDp/2001.jpg",
       title: "2001",
-      description: "This is a description or additional content for card 4.",
+      description:
+        "பாரதியியல் ஆய்வாளர் - சாகித்ய அகாடமி விருது பெற்ற படைப்பாளி தொ.மு.சி.ரகுநாதன் விருது பெற்றார். சாகித்ய அகாடமி விருது பெற்ற எழுத்தாளர் பொன்னீலன் விருது வழங்கினார். சாகித்ய அகாடமி விருது பெற்ற எழுத்தாளர் பிரபஞ்சன், வழக்குரைஞர் எம்.செல்வநாயகி ஆகியோர் சிறப்புரையாற்றினர்",
     },
     {
       image: "https://i.ibb.co/9bjcz43/2002.jpg",
       title: "2002",
-      description: "This is a description or additional content for card 5.",
+      description:
+        "எழுத்தாளர் த. ஜெயகாந்தன் விருது பெற்றார். தியாகி ஐ. மாயாண்டிபாரதி விருது வழங்கினார். பாரதியியல் ஆய்வாளர் பெ.சு.மணி தமிழ்நாடு சுதந்திரப் போராட்ட வீரர்கள் சமிதியின் தலைவர் தியாகி பி.ராமசாமி. தமிழருவிமணியன், பாரதி கிருஷ்ணகுமார், கவிஞர் பரிணாமன் ஆகியோர் சிறப்புரையாற்றினர்",
     },
     {
       image: "https://i.ibb.co/KxRF6tL/2003.jpg",
       title: "2003",
-      description: "This is a description or additional content for card 6.",
+      description:
+        "கல்வியாளர் - தமிழறிஞர் - கவிஞர் வா.செ.குழந்தைசாமி விருது பெற்றார். தவத்திரு குன்றக்குடி பொன்னம்பல அடிகளார், கவிஞர் ஈரோடு தமிழன்பன் ஆகியோர் சிறப்புரையாற்றினர்",
     },
     {
       image: "https://i.ibb.co/XWc1fJQ/2004.jpg",
       title: "2004",
-      description: "This is a description or additional content for card 7.",
+      description:
+        "கல்வியாளர் - துணைவேந்தர் வே.வசந்திதேவி விருது பெற்றார். மத்திய இணையமைச்சர் மாண்புமிகு சுப்புலட்சுமி ஜெகதீசன் மத்திய இணையமைச்சர் ஈ.வி.கே.எஸ்.இளங்கோவன் கோவை பாரதிய வித்யா பவன் தலைவர் பி.கே.கிருஷ்ணராஜ் வாணவராயர் ஆகியோர் சிறப்புரையாற்றினர்",
     },
     {
       image: "https://i.ibb.co/xGZM6Vm/2005.jpg",
       title: "2005",
-      description: "This is a description or additional content for card 8.",
+      description:
+        "ராஜஸ்தானில் தீவிர சமூகப் பணியாற்றும் தமிழ்ப் பெண் போராளி அருணாராய் ஐஏஎஸ் விருது பெற்றார். அ.கி.வெங்கிடசுப்பிரமணியன் ஐஏஎஸ் விழாச் சிறப்பு விருந்தினராகப் பங்கேற்றார்.",
     },
     {
       image: "https://i.ibb.co/SdnWWZ9/2006.jpg",
       title: "2006",
-      description: "This is a description or additional content for card 9.",
+      description:
+        "சுதந்திரப் போராட்டத் தியாகி ஜி.எஸ்.லட்சுமண ஐயர் அவர்களுக்கு விருது வழங்கப்பட்டது. பி.கே.கிருஷ்ணராஜ் வாணவராயர், தமிழருவிமணியன் ஆகியோர் விழாச் சிறப்புரையாற்றினர்.",
     },
   ];
 
