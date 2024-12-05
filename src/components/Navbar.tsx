@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Button } from "@nextui-org/react";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import Logo from "../assets/msp_logo.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +19,11 @@ const Navbar = () => {
         {/* Logo */}
         <div>
           <Link to={"/"}>
-            <img src={Logo} className="w-[40px] md:w-[60px]" alt="Logo" />
+            <img
+              src={"https://i.ibb.co/41gGKnr/msp-logo.png"}
+              className="w-[40px] md:w-[60px]"
+              alt="Logo"
+            />
           </Link>
         </div>
 

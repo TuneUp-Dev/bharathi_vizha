@@ -8,6 +8,7 @@ import AboutMSP from "../components/Home/AboutMSP";
 import Postscript from "../components/Home/Postscript";
 import Footer from "../components/Footer";
 import VideoPlayer from "../components/Home/VideoPlayer";
+import Organizer from "../components/Home/Organizer";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
         <Jothi />
         <AboutMSP />
         <Postscript />
+        <Organizer />
         <VideoPlayer />
         <Footer />
       </div>
