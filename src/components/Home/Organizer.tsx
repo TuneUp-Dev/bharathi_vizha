@@ -11,7 +11,7 @@ const Organizer = () => {
     <div className="bg-red-900 w-full h-auto">
       <div className="mt-20 py-12 px-5 sm:px-10 w-full max-w-[1200px] mx-auto">
         <h1 className="text-[32px] sm:text-[40px] lg:text-[50px] text-amber-500 font-bold mb-5 text-center lg:text-left">
-          பேரவையின் நிறுவனர்:
+          பேரவையின் நிறுவனர்
         </h1>
         <div className="w-full h-auto mt-8 flex flex-col lg:flex-row justify-between items-start gap-y-10 lg:gap-y-0 lg:gap-x-20">
           {/* Bharathiyar Image */}
