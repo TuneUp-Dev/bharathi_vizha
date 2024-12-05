@@ -13,7 +13,7 @@ const Postscript = () => {
         <div className="flex flex-col lg:flex-row justify-between items-start gap-y-10 lg:gap-y-0 gap-x-10">
           {/* Text Section */}
           <div className="flex-1 text-start">
-            <h1 className="text-[24px] sm:text-[36px] lg:text-[50px] text-red-900 font-bold mb-5 leading-[60px]">
+            <h1 className="text-[24px] sm:text-[36px] lg:text-[50px] text-red-900 font-bold mb-5 leading-[30px] md:leading-[60px]">
               பேரவையின் ஜப்பான் கிளை சார்பில் பாரதி விழா:
             </h1>
             <p className="text-[14px] sm:text-[16px] leading-relaxed font-medium">

@@ -6,7 +6,7 @@ const About = () => {
         <h1 className="text-[32px] sm:text-[40px] lg:text-[50px] text-red-900 font-bold mb-5 text-center lg:text-left">
           முன்னுரை
         </h1>
-        <p className="text-[16px] sm:text-[17px] leading-relaxed text-justify lg:text-left">
+        <p className="text-[15px] sm:text-[17px] leading-relaxed text-justify lg:text-left">
           மக்கள் சிந்தனைப் பேரவையின் தொடக்கத்தில் இருந்து ஆண்டுதோறும் மகாகவி
           பாரதியின் பிறந்தநாள் ஆகிய டிசம்பர் 11ஆம் தேதி பேரவை சார்பில் பாரதி
           விழா கொண்டாடப்பட்டு வருகிறது. இதுவரை 26 ஆண்டுகள் - ஆண்டு தவறாமல், தேதி

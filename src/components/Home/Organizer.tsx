@@ -24,7 +24,7 @@ const Organizer = () => {
           {/* Organizer Text */}
           <div className="text-black">
             <p
-              className={`text-white text-[16px] sm:text-[17px] leading-relaxed text-justify lg:text-left transition-all duration-500 ease-in-out`}
+              className={`text-white text-[15px] sm:text-[17px] leading-relaxed text-justify lg:text-left transition-all duration-500 ease-in-out`}
               style={{
                 overflow: isExpanded ? "visible" : "hidden",
                 display: "-webkit-box",
