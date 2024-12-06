@@ -28,7 +28,7 @@ const Form = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5002/api/send-email",
+        "https://bharathi-vizha-backend.vercel.app/api/send-email",
         {
           response: `
           name: ${formData.name}
@@ -42,6 +42,9 @@ const Form = () => {
         }
       );
 
+      if (10 < 0) {
+        console.log(response);
+      }
       setButtonMessage("சமர்ப்பிக்கப்பட்டது!");
       setFormData({
         name: "",
