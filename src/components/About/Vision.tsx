@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Bharathi from "../../assets/bharathi.png";
 
 const Vision = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -13,7 +12,7 @@ const Vision = () => {
       {/* Vision Text */}
       <div className="text-black">
         <h1 className="text-[32px] sm:text-[40px] lg:text-[50px] text-red-900 font-bold mb-5 text-center lg:text-left">
-          நோக்கங்கள்:
+          நோக்கங்கள்
         </h1>
         <p
           className={`text-[16px] sm:text-[17px] leading-relaxed text-justify lg:text-left transition-all duration-500 ease-in-out`}
@@ -60,7 +59,7 @@ const Vision = () => {
 
       {/* Bharathiyar Image */}
       <img
-        src={Bharathi}
+        src={"https://i.ibb.co/cF4jZ41/bharathi.png"}
         className="rounded-2xl w-full mx-auto max-w-[300px] sm:max-w-[400px] object-cover"
         alt="Subramania Bharathiyar"
       />
