@@ -14,12 +14,12 @@ const Organizer = () => {
           பேரவையின் நிறுவனர்
         </h1>
         <div className="w-full h-auto mt-8 flex flex-col lg:flex-row justify-between items-start gap-y-10 lg:gap-y-0 lg:gap-x-20">
-          {/* Bharathiyar Image */}
-          <img
+          {/* Stalin Image */}
+          {/* <img
             src={"https://i.ibb.co/9nSzXKr/Stalin-Gunasekaran.jpg"}
             className="rounded-2xl w-full mx-auto max-w-[360px] sm:max-w-[400px] object-cover"
             alt="Founder"
-          />
+          /> */}
 
           {/* Organizer Text */}
           <div className="text-black">
