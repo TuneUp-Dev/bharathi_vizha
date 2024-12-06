@@ -21,7 +21,7 @@ const AboutMSP = () => {
               </div>
 
               {/* Image */}
-              <div className="w-full max-w-[300px] sm:min-w-[310px] bg-white rounded-2xl flex justify-center items-center p-7">
+              <div className="w-full mx-auto max-w-[300px] sm:min-w-[310px] bg-white rounded-2xl flex justify-center items-center p-7">
                 <img
                   src={"https://i.ibb.co/pRn6QQ0/msp.png"}
                   className="w-full object-cover"

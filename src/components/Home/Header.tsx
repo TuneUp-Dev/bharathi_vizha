@@ -13,7 +13,7 @@ const Header = () => {
     <>
       <div className="w-full h-screen md:h-[600px] lg:h-[700px] xl:h-[800px] xl:max-h-screen bg-red-900 overflow-hidden relative noto">
         <div
-          className={`absolute top-[90px] md:top-[120px] text-center w-full flex justify-center items-center transform text-amber-500 font-bold transition-all duration-1000 ease-in-out ${
+          className={`absolute top-[90px] md:top-[120px] text-center w-full flex justify-center items-center transform text-white font-bold transition-all duration-1000 ease-in-out ${
             isVisible ? "opacity-100" : "opacity-0"
           } text-[14px] md:text-[28px] lg:text-[40px] xl:text-[60px]`}
         >

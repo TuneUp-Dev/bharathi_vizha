@@ -13,6 +13,7 @@ interface CardProps {
   image: string;
   title: string;
   description: string;
+  invitation?: string;
   onClick: () => void;
 }
 
@@ -44,54 +45,72 @@ const SecondMain: React.FC = () => {
       title: "2007",
       description:
         "இயற்கை வேளாண் ஞானி கோ.நம்மாழ்வார் விருது பெற்றார். மத்திய இணையமைச்சர் மாண்புமிகு சுப்புலட்சுமி ஜெகதீசன், பேராசிரியர் டாக்டர் சு.சிவகாமசுந்தரி, அமைச்சர் மாண்புமிகு தங்கம் தென்னரசு, மாவட்ட ஆட்சித் தலைவர் த.உதயச்சந்திரன் ஐஏஎஸ் ஆகியோர் சிறப்புரையாற்றினர்",
+      invitation:
+        "https://i.ibb.co/JmZFHsp/BHARATHI-VIZHA-INVITATIONS-2007-1.jpg",
     },
     {
       image: "https://i.ibb.co/br0Bnct/2008.jpg",
       title: "2008",
       description:
         "தமிழறிஞர் மணவை முஸ்தபா விருது பெற்றார். திரைப்பட நடிகை மனோரமா, பாரதியார் பல்கலைக்கழகத் துணைவேந்தர் பேராசிரியர் டாக்டர் ஜி.திருவாசகம், சாத்தூர் இலட்சுமணப் பெருமாள் ஆகியோர் சிறப்புரையாற்றினர்.",
+      invitation:
+        "https://i.ibb.co/qmCk92D/BHARATHI-VIZHA-INVITATIONS-2008-1.jpg",
     },
     {
       image: "https://i.ibb.co/fQ3Hm9s/2009.jpg",
       title: "2009",
       description:
         "பாரதியியல் ஆய்வாளரும் வரலாற்றியல் அறிஞருமான நூறு வயது நிரம்பிய சி.எஸ்.சுப்ரமணியம் விருது பெற்றார். சொற்பொழிவாளர் நெல்லை கண்ணன், பி.கே.கிருஷ்ணராஜ் வாணவராயர், மாவட்ட ஆட்சித் தலைவர் இரா.சுடலைக்கண்ணன் ஐஏஎஸ் ஆகியோர் சிறப்புரையாற்றினர்.",
+      invitation:
+        "https://i.ibb.co/Xy1MDMZ/BHARATHI-VIZHA-INVITATIONS-2009-1.jpg",
     },
     {
       image: "https://i.ibb.co/kBPs327/2010.jpg",
       title: "2010",
       description:
         "சமூக சேவகி கிருஷ்ணம்மாள் ஜெகநாதன் விருது பெற்றார். மத்திய இணையமைச்சர் மாண்புமிகு சுப்புலட்சுமி ஜெகதீசன், காந்தி கிராம கிராமியப் பல்கலைக்கழகத்தின் மேனாள் துணைவேந்தர் பேராசிரியர் ந.மார்கண்டன், சாகித்ய அகாடமி விருது பெற்ற எழுத்தாளர் பிரபஞ்சன் ஆகியோர் சிறப்புரையாற்றினர்.",
+      invitation:
+        "https://i.ibb.co/nr1c539/BHARATHI-VIZHA-INVITATION-2010-1.jpg",
     },
     {
       image: "https://i.ibb.co/v4KFCFb/2011.jpg",
       title: "2011",
       description:
         "திறனாய்வாளர் தி.க.சிவசங்கரன் விருது பெற்றார். மனோன்மணியம் சுந்தரனார் பல்கலைக்கழக மேனாள் துணைவேந்தர் பேராசிரியர் க.ப.அறவாணன், 'தினமணி' இதழின் ஆசிரியர் கே.வைத்தியநாதன், மாவட்ட ஆட்சித் தலைவர் டாக்டர் வி.கே.சண்முகம் ஐஏஎஸ், கல்வெட்டறிஞர் புலவர் செ.இராசு ஆகியோர் சிறப்புரையாற்றினர்.",
+      invitation:
+        "https://i.ibb.co/0B9PXL1/BHARATHI-VIZHA-INVITATIONS-2011-1.jpg",
     },
     {
       image: "https://i.ibb.co/S50v5LC/2012.jpg",
       title: "2012",
       description:
         "பாரதியியல் அறிஞர் முதுமுனைவர் டி.என்.இராமச்சந்திரன் விருது பெற்றார். ஆய்வறிஞர் பெ.சு.மணி, சொற்பொழிவாளர் பேராசிரியர் கு.ஞானசம்பந்தன், ஈரோடு தங்க.விசுவநாதன் ஆகியோர் சிறப்புரையாற்றினர்.",
+      invitation:
+        "https://i.ibb.co/xYpMzvH/BHARATHI-VIZHA-INVITATIONS-2012-1.jpg",
     },
     {
       image: "https://i.ibb.co/0t6FtG3/2013.jpg",
       title: "2013",
       description:
         "பாரதியியல் ஆய்வாளர் சீனி.விசுவநாதன் விருது பெற்றார். உச்சநீதிமன்ற மேனாள் நீதிபதி ஏ.ஆர்.லட்சுமணன், இலக்கியச்சுடர் வழக்கறிஞர் த.இராமலிங்கம், சிங்கப்பூர் 'கவிமாலை' அமைப்பின் காப்பாளர் புதுமைத்தேனீ மா.அன்பழகள், பேராசிரியர் செ.சு.பழனிசாமி ஆகியோர் சிறப்புரையாற்றினர்",
+      invitation:
+        "https://i.ibb.co/L1wXr1J/BHARATHI-VIZHA-INVITATIONS-2013-1.jpg",
     },
     {
       image: "https://i.ibb.co/CbWWmZ4/2014.jpg",
       title: "2014",
       description:
         "மூத்த தொல்லியல் ஆய்வாளர் பேராசிரியர் எ.சுப்பராயலு விருது பெற்றார். புலவர் புலமைப்பித்தன், 'தினமலர்' ஆசிரியர் முனைவர் இரா.கிருஷ்ணமூர்த்தி, 'கனடா உதயன்' இதழின் பிரதம ஆசிரியர் ஆர்.என்.லோகேந்திரலிங்கம், பேராசிரியர் சிற்பி பாலசுப்பிரமணியம் ஆகியோர் சிறப்புரையாற்றினர்.",
+      invitation:
+        "https://i.ibb.co/WyY6Y6Q/BHARATHI-VIZHA-INVITATIONS-2014-1.jpg",
     },
     {
       image: "https://i.ibb.co/LSXpcPZ/2015.jpg",
       title: "2015",
       description:
         "வில்லிசைக் கலைஞர் கவிஞர் சுப்பு ஆறுமுகம் விருது பெற்றார். மூத்த அரசியல் தலைவர் ஆர்.நல்லகண்ணு, பொதிகைத் தொலைக்காட்சி - கோவை நிலையத் தலைவர் திருமதி ஆண்டாள் பிரியதர்ஷினி, சொற்பொழிவாளர் பேராசிரியர் த.இராஜாராம் ஆகியோர் சிறப்புரையாற்றினர்",
+      invitation:
+        "https://i.ibb.co/mChCJpd/BHARATHI-VIZHA-INVITATION-2015-1.jpg",
     },
   ];
 
@@ -100,6 +119,7 @@ const SecondMain: React.FC = () => {
     title: string;
     description: string;
     image: string;
+    invitation?: string;
   } | null>(null);
 
   const openModal = (card: (typeof cardData)[number]) => {
@@ -127,6 +147,7 @@ const SecondMain: React.FC = () => {
               image={card.image}
               title={card.title}
               description={card.description}
+              invitation={card.invitation}
               onClick={() => openModal(card)}
             />
           ))}
@@ -172,6 +193,30 @@ const SecondMain: React.FC = () => {
                       <p className="mt-2 text-justify">
                         {selectedCard.description}
                       </p>
+
+                      {selectedCard.invitation ? (
+                        <>
+                          <div className="mt-10 bg-gray-100 w-full h-auto p-5 rounded-lg">
+                            <h1 className="text-[35px] font-semibold text-red-900">
+                              அழைப்பிதழ்
+                            </h1>
+                            <img
+                              src={selectedCard.invitation}
+                              className="rounded-xl"
+                              alt=""
+                            />
+                          </div>
+                        </>
+                      ) : (
+                        <>
+                          <div className="mt-10 bg-gray-100 w-full h-auto p-5 rounded-lg">
+                            <h1 className="text-[30px] text-center font-semibold text-red-900">
+                              {selectedCard.title} ஆம் ஆண்டு பதிவுகள் கைவசம்
+                              இல்லை
+                            </h1>
+                          </div>
+                        </>
+                      )}
                     </ModalBody>
                   </div>
                 </>

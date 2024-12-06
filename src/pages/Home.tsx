@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import Header from "../components/Home/Header";
 import About from "../components/Home/About";
 import Vision from "../components/Home/Vision";
-import Agenda from "../components/Home/Agenda";
+// import Agenda from "../components/Home/Agenda";
 import Jothi from "../components/Home/Jothi";
 import AboutMSP from "../components/Home/AboutMSP";
 import Postscript from "../components/Home/Postscript";
@@ -18,11 +18,11 @@ const Home = () => {
         <Header />
         <About />
         <Vision />
-        <Agenda />
+        <Organizer />
+        {/* <Agenda /> */}
         <Jothi />
         <AboutMSP />
         <Postscript />
-        <Organizer />
         <VideoPlayer />
         <Footer />
       </div>
