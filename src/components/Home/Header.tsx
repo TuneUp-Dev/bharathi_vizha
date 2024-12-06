@@ -13,12 +13,12 @@ const Header = () => {
     <>
       <div className="w-full h-screen md:h-[600px] lg:h-[700px] xl:h-[800px] xl:max-h-screen bg-red-900 overflow-hidden relative noto">
         <div
-          className={`absolute top-[90px] md:top-[120px] text-center w-full flex justify-center items-center transform text-white font-bold transition-all duration-1000 ease-in-out ${
+          className={`absolute top-[110px] md:top-[120px] text-center w-full flex justify-center items-center transform text-white font-bold transition-all duration-1000 ease-in-out ${
             isVisible ? "opacity-100" : "opacity-0"
-          } text-[14px] md:text-[28px] lg:text-[40px] xl:text-[60px]`}
+          } text-[21px] md:text-[28px] lg:text-[40px] xl:text-[60px]`}
         >
           மக்கள் சிந்தனைப் பேரவை
-          <span className="text-[7px] md:text-[14px] lg:text-[20px] xl:text-[22px] mt-0.5 md:mt-1 lg:mt-1.5 xl:mt-4 ml-1">
+          <span className="text-[7px] md:text-[14px] lg:text-[20px] xl:text-[22px] mt-1 lg:mt-1.5 xl:mt-4 ml-1">
             -யின்
           </span>
         </div>
@@ -38,9 +38,9 @@ const Header = () => {
         </div>
 
         <div
-          className={`absolute md:hidden top-[110px] text-center w-full flex justify-center items-center transform text-amber-500 font-bold transition-all duration-1000 ease-in-out ${
+          className={`absolute md:hidden top-[135px] md:top-[110px] text-center w-full flex justify-center items-center transform text-amber-500 font-bold transition-all duration-1000 ease-in-out ${
             isVisible ? "opacity-100" : "opacity-0"
-          } text-[50px] sm:text-[60px]`}
+          } text-[44px] sm:text-[60px]`}
         >
           <span className="">
             பாரதி விழா
