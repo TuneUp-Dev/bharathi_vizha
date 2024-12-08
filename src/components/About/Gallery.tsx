@@ -64,7 +64,7 @@ const Gallery: React.FC = () => {
       <div>
         <div className="h-[120px] md:h-[140px] flex items-center justify-center mt-[20px]">
           <h1 className="text-[30px] md:text-[40px] lg:text-[50px] xl:text-[60px] text-red-900 font-bold text-center">
-            கலை காட்சி
+            இயக்கப் படங்கள்
           </h1>
         </div>
         <div className="w-[360px] sm:w-[600px] md:w-[700px] lg:w-[960px] xl:w-[1200px] mx-auto grid gap-6 grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3">
