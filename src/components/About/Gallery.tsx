@@ -18,49 +18,54 @@ const Card: React.FC<CardProps> = ({ image }) => {
 const Gallery: React.FC = () => {
   const cardData = [
     {
-      image: "https://i.ibb.co/hDmgrZ9/2016.jpg",
-      title: "2016",
+      image: "https://i.ibb.co/S3xCd2G/DSC-3348.jpg",
+      title: "DSC-3348",
+      description: "This is a description or additional content for card 5.",
+    },
+    {
+      image: "https://i.ibb.co/3s7SWKS/2014.jpg",
+      title: "2014",
+      description: "This is a description or additional content for card 1.",
+    },
+    {
+      image: "https://i.ibb.co/Rp8GvJB/000002.jpg",
+      title: "000002",
+      description: "This is a description or additional content for card 2.",
+    },
+    {
+      image: "https://i.ibb.co/6b0yj36/DSC-0099-copy.jpg",
+      title: "DSC-0099-copy",
+      description: "This is a description or additional content for card 3.",
+    },
+    {
+      image: "https://i.ibb.co/TTfQLxN/DSC-0145-copy.jpg",
+      title: "DSC-0145-copy",
+      description: "This is a description or additional content for card 4.",
+    },
+    {
+      image: "https://i.ibb.co/rGVTkCz/DSCN9893.jpg",
+      title: "DSCN9893",
+      description: "This is a description or additional content for card 6.",
+    },
+    {
+      image: "https://i.ibb.co/9NqX7Nn/DSC-0089-copy.jpg",
+      title: "DSC-0089-copy",
+      description: "This is a description or additional content for card 7.",
+    },
+    {
+      image: "https://i.ibb.co/4P0ZWc0/DSC-2023.jpg",
+      title: "DSC-2023",
       description: "This is a description or additional content for card 8.",
     },
     {
-      image: "https://i.ibb.co/2qywd0f/2017.jpg",
-      title: "2017",
-      description: "This is a description or additional content for card 8.",
+      image: "https://i.ibb.co/G5qFf3Z/DSC-0273-copy.jpg",
+      title: "DSC-0273-copy",
+      description: "This is a description or additional content for card 9.",
     },
     {
-      image: "https://i.ibb.co/s2pW8n9/2018.jpg",
-      title: "2018",
-      description: "This is a description or additional content for card 3.",
-    },
-    {
-      image: "https://i.ibb.co/FHVPJDk/2019.jpg",
-      title: "2019",
-      description: "This is a description or additional content for card 3.",
-    },
-    {
-      image: "https://i.ibb.co/fQq6xyW/2020.jpg",
-      title: "2020",
-      description: "This is a description or additional content for card 3.",
-    },
-    {
-      image: "https://i.ibb.co/B3n65wL/2021.jpg",
-      title: "2021",
-      description: "This is a description or additional content for card 3.",
-    },
-    {
-      image: "https://i.ibb.co/6ZDzf43/2022.jpg",
-      title: "2022",
-      description: "This is a description or additional content for card 3.",
-    },
-    {
-      image: "https://i.ibb.co/XWqBv1n/2023.jpg",
-      title: "2023",
-      description: "This is a description or additional content for card 3.",
-    },
-    {
-      image: "https://i.ibb.co/XWqBv1n/2023.jpg",
-      title: "2024",
-      description: "This is a description or additional content for card 3.",
+      image: "https://i.ibb.co/nQrtBLV/DSC-1996.jpg",
+      title: "DSC-1996",
+      description: "This is a description or additional content for card 10.",
     },
   ];
 
