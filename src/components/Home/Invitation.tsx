@@ -9,7 +9,7 @@ const Invitation = () => {
         </h1>
         <img
           className="rounded-sm"
-          src="https://i.ibb.co/PcCvXYj/Whats-App-Image-2024-12-08-at-14-15-25.jpg"
+          src="https://i.ibb.co/yhrvcHH/Whats-App-Image-2024-12-08-at-15-16-06.jpg"
           alt=""
         />
       </div>
