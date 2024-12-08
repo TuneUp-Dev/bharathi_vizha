@@ -9,6 +9,7 @@ import Postscript from "../components/Home/Postscript";
 import Footer from "../components/Footer";
 import VideoPlayer from "../components/Home/VideoPlayer";
 import Organizer from "../components/Home/Organizer";
+import Invitation from "../components/Home/Invitation";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <div className="overflow-y-scroll h-screen scroll-smooth transition-all duration-300 ease-linear scrollbar scrollbar-thumb-red-900 scrollbar-track-gray-100">
         <Navbar />
         <Header />
+        <Invitation />
         <About />
         <Vision />
         <Organizer />

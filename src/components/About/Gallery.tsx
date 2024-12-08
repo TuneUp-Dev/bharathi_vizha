@@ -23,24 +23,19 @@ const Gallery: React.FC = () => {
       description: "This is a description or additional content for card 5.",
     },
     {
-      image: "https://i.ibb.co/3s7SWKS/2014.jpg",
-      title: "2014",
-      description: "This is a description or additional content for card 1.",
-    },
-    {
       image: "https://i.ibb.co/Rp8GvJB/000002.jpg",
       title: "000002",
       description: "This is a description or additional content for card 2.",
     },
     {
+      image: "https://i.ibb.co/bs3MMBX/DSCN3077.jpg",
+      title: "DSC-0145-copy",
+      description: "This is a description or additional content for card 4.",
+    },
+    {
       image: "https://i.ibb.co/6b0yj36/DSC-0099-copy.jpg",
       title: "DSC-0099-copy",
       description: "This is a description or additional content for card 3.",
-    },
-    {
-      image: "https://i.ibb.co/TTfQLxN/DSC-0145-copy.jpg",
-      title: "DSC-0145-copy",
-      description: "This is a description or additional content for card 4.",
     },
     {
       image: "https://i.ibb.co/rGVTkCz/DSCN9893.jpg",
@@ -51,11 +46,6 @@ const Gallery: React.FC = () => {
       image: "https://i.ibb.co/9NqX7Nn/DSC-0089-copy.jpg",
       title: "DSC-0089-copy",
       description: "This is a description or additional content for card 7.",
-    },
-    {
-      image: "https://i.ibb.co/4P0ZWc0/DSC-2023.jpg",
-      title: "DSC-2023",
-      description: "This is a description or additional content for card 8.",
     },
     {
       image: "https://i.ibb.co/G5qFf3Z/DSC-0273-copy.jpg",
