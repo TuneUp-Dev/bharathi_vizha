@@ -4,7 +4,7 @@ const About = () => {
       {/* About Text */}
       <div className="text-black">
         <h1 className="text-[32px] sm:text-[40px] lg:text-[50px] text-red-900 font-bold mb-5 text-center lg:text-left">
-          முன்னுரை
+          அறிமுகம்
         </h1>
         <p className="text-[15px] sm:text-[17px] leading-relaxed text-justify lg:text-left">
           மக்கள் சிந்தனைப் பேரவையின் தொடக்கத்திலிருந்து ஆண்டுதோறும் மகாகவி
