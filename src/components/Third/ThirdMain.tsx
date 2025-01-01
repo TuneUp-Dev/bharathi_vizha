@@ -137,10 +137,15 @@ const ThirdMain: React.FC = () => {
             />
           ))}
         </div>
-        <div className="w-full flex items-center justify-center mt-14">
+        <div className="w-full flex items-center justify-center mt-14 gap-x-5">
           <Link to={"/2007-2015"}>
             <Button size="lg" className="bg-amber-500 text-red-900 font-medium">
               Previous Page
+            </Button>
+          </Link>
+          <Link to={"/2024"}>
+            <Button size="lg" className="bg-amber-500 text-red-900 font-medium">
+              Next Page
             </Button>
           </Link>
         </div>
