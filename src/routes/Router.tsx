@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import FourthMain from "../components/Fourth/FourthMain";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import First from "../pages/First";
@@ -15,6 +16,8 @@ const Router = () => {
         <Route path="/1998-2006" element={<First />} />
         <Route path="/2007-2015" element={<Second />} />
         <Route path="/2016-2023" element={<Third />} />
+        
+      <Route path="/2024" element={<FourthMain/>}/>
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
